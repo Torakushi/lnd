@@ -637,10 +637,8 @@ func (b *BtcWallet) ListAccounts(name string,
 		// custom accounts with various key scopes. This behaviour has
 		// been fixed but, we return all potential custom accounts with
 		// the given name.
-		var account *waddrmgr.AccountProperties
 		for _, scope := range waddrmgr.DefaultKeyScopes {
-			var err error
-			account, err = b.wallet.AccountPropertiesByName(
+			a, err := b.wallet.AccountPropertiesByName(
 				scope, name,
 			)
 			if waddrmgr.IsError(err, waddrmgr.ErrAccountNotFound) {
@@ -650,17 +648,17 @@ func (b *BtcWallet) ListAccounts(name string,
 				return nil, err
 			}
 
-			break
+			res = append(res, a)
 		}
-		if account == nil {
-			str := fmt.Sprintf("account %s not found", name)
+		if len(res) == 0 {
+			str := fmt.Sprintf(
+				"account name '%s' not found", name,
+			)
 			return nil, waddrmgr.ManagerError{
 				ErrorCode:   waddrmgr.ErrAccountNotFound,
 				Description: str,
 			}
 		}
-
-		res = append(res, account)
 
 	// Only the key scope filter was provided, so we'll return all accounts
 	// matching it.
@@ -835,6 +833,10 @@ func (b *BtcWallet) ListAddresses(name string,
 // The address type can usually be inferred from the key's version, but may be
 // required for certain keys to map them into the proper scope.
 //
+// For custom accounts, we will first check if there is no account with the same
+// name (even with a different key scope). No custom account should have various
+// key scopes as it will result to non-deterministic behaviour.
+//
 // For BIP-0044 keys, an address type must be specified as we intend to not
 // support importing BIP-0044 keys into the wallet using the legacy
 // pay-to-pubkey-hash (P2PKH) scheme. A nested witness address type will force
@@ -851,6 +853,24 @@ func (b *BtcWallet) ImportAccount(name string, accountPubKey *hdkeychain.Extende
 	masterKeyFingerprint uint32, addrType *waddrmgr.AddressType,
 	dryRun bool) (*waddrmgr.AccountProperties, []btcutil.Address,
 	[]btcutil.Address, error) {
+
+	// For custom accounts, we first check if there is no existing account
+	// with the same name.
+	if name != lnwallet.DefaultAccountName &&
+		name != waddrmgr.ImportedAddrAccountName {
+
+		_, err := b.ListAccounts(name, nil)
+		if err == nil {
+			return nil, nil, nil,
+				fmt.Errorf("account '%s' already exists",
+					name)
+		}
+		if !waddrmgr.IsError(err, waddrmgr.ErrAccountNotFound) {
+			return nil, nil, nil, fmt.Errorf("unable to "+
+				"check if an account with the same name "+
+				"exists: %v", err)
+		}
+	}
 
 	if !dryRun {
 		accountProps, err := b.wallet.ImportAccount(

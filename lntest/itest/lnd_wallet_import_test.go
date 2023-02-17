@@ -2,6 +2,7 @@ package itest
 
 import (
 	"bytes"
+	"fmt"
 	"testing"
 	"time"
 
@@ -549,6 +550,35 @@ func runWalletImportAccountScenario(ht *lntemp.HarnessTest,
 		AddressType:       addrType,
 	}
 	dave.RPC.ImportAccount(importReq)
+
+	// Try to import an account with the same name but with a different
+	// key scope. It should return an error.
+	otherAddrType := walletrpc.AddressType_TAPROOT_PUBKEY
+	if addrType == walletrpc.AddressType_TAPROOT_PUBKEY {
+		addrType--
+	}
+
+	listReq = &walletrpc.ListAccountsRequest{
+		Name:        "default",
+		AddressType: otherAddrType,
+	}
+	listResp = carol.RPC.ListAccounts(listReq)
+	require.Len(ht, listResp.Accounts, 1)
+	carolAccountOtherAddrType := listResp.Accounts[0]
+
+	importReq = &walletrpc.ImportAccountRequest{
+		Name:              importedAccount,
+		ExtendedPublicKey: carolAccountOtherAddrType.ExtendedPublicKey,
+		AddressType:       otherAddrType,
+	}
+
+	errAccountExists := fmt.Sprintf(
+		"account '%s' already exists", importedAccount,
+	)
+
+	err := dave.RPC.ImportAccountAssertErr(importReq)
+	require.Contains(ht, err.Error(), errAccountExists,
+		"expected: account exists error")
 
 	// We'll generate an address for Carol from Dave's node to receive some
 	// funds.
