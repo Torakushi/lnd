@@ -636,16 +636,34 @@ func (b *BtcWallet) ListAccounts(name string,
 			break
 		}
 
-		// Otherwise, we'll retrieve the single account that's mapped by
+		// In theory, it should be only one custom account for the given
+		// name. However, due to a lack of check, users could create
+		// custom accounts with various key scopes. This behaviour has
+		// been fixed but, we return all potential custom accounts with
 		// the given name.
-		scope, acctNum, err := b.wallet.LookupAccount(name)
-		if err != nil {
-			return nil, err
+		var account *waddrmgr.AccountProperties
+		for _, scope := range waddrmgr.DefaultKeyScopes {
+			var err error
+			account, err = b.wallet.AccountPropertiesByName(
+				scope, name,
+			)
+			if waddrmgr.IsError(err, waddrmgr.ErrAccountNotFound) {
+				continue
+			}
+			if err != nil {
+				return nil, err
+			}
+
+			break
 		}
-		account, err := b.wallet.AccountProperties(scope, acctNum)
-		if err != nil {
-			return nil, err
+		if account == nil {
+			str := fmt.Sprintf("account %s not found", name)
+			return nil, waddrmgr.ManagerError{
+				ErrorCode:   waddrmgr.ErrAccountNotFound,
+				Description: str,
+			}
 		}
+
 		res = append(res, account)
 
 	// Only the key scope filter was provided, so we'll return all accounts
