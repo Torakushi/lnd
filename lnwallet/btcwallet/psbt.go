@@ -97,7 +97,7 @@ func (b *BtcWallet) FundPsbt(packet *psbt.Packet, minConfs int32,
 				"custom change type for custom accounts")
 		}
 
-		scope, account, err := b.wallet.LookupAccount(accountName)
+		scope, account, err := b.lookUpFirstCustomAccount(accountName)
 		if err != nil {
 			return 0, err
 		}
@@ -511,7 +511,7 @@ func (b *BtcWallet) FinalizePsbt(packet *psbt.Packet, accountName string) error 
 	// number to determine if the inputs belonging to this account should be
 	// signed.
 	default:
-		scope, account, err := b.wallet.LookupAccount(accountName)
+		scope, account, err := b.lookUpFirstCustomAccount(accountName)
 		if err != nil {
 			return err
 		}
@@ -520,4 +520,46 @@ func (b *BtcWallet) FinalizePsbt(packet *psbt.Packet, accountName string) error 
 	}
 
 	return b.wallet.FinalizePsbt(keyScope, accountNum, packet)
+}
+
+// lookUpFirstCustomAccount returns the first custom account found.
+// In theory, it should be only one custom account for the given
+// name. However, due to a lack of check, users could have created
+// custom accounts with various key scopes. This behaviour has
+// been fixed but, to avoid non-deterministic behaviour implied by
+// 'LookupAccount'.
+func (b *BtcWallet) lookUpFirstCustomAccount(
+	name string) (waddrmgr.KeyScope, uint32, error) {
+
+	var (
+		account  *waddrmgr.AccountProperties
+		keyScope waddrmgr.KeyScope
+	)
+	for _, scope := range waddrmgr.DefaultKeyScopes {
+		var err error
+		account, err = b.wallet.AccountPropertiesByName(
+			scope, name,
+		)
+		if waddrmgr.IsError(err, waddrmgr.ErrAccountNotFound) {
+			continue
+		}
+		if err != nil {
+			return keyScope, 0, err
+		}
+
+		keyScope = scope
+
+		break
+	}
+	if account == nil {
+		str := fmt.Sprintf(
+			"account name '%s' not found", name,
+		)
+		return keyScope, 0, waddrmgr.ManagerError{
+			ErrorCode:   waddrmgr.ErrAccountNotFound,
+			Description: str,
+		}
+	}
+
+	return keyScope, account.AccountNumber, nil
 }
