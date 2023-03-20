@@ -638,17 +638,20 @@ func (b *BtcWallet) ListAccounts(name string,
 		// been fixed but, we return all potential custom accounts with
 		// the given name.
 		for _, scope := range waddrmgr.DefaultKeyScopes {
-			var err error
 			a, err := b.wallet.AccountPropertiesByName(
 				scope, name,
 			)
 			if waddrmgr.IsError(err, waddrmgr.ErrAccountNotFound) {
+				log.Warnf("scope not found for %s: %s", name, scope.String())
+
 				continue
 			}
 			if err != nil {
+				log.Warnf("error for scope for %s: %s", name, scope.String())
 				return nil, err
 			}
 
+			log.Warnf("found a scope for %s: %s", name, scope.String())
 			res = append(res, a)
 		}
 
