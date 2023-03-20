@@ -637,10 +637,9 @@ func (b *BtcWallet) ListAccounts(name string,
 		// custom accounts with various key scopes. This behaviour has
 		// been fixed but, we return all potential custom accounts with
 		// the given name.
-		var account *waddrmgr.AccountProperties
 		for _, scope := range waddrmgr.DefaultKeyScopes {
 			var err error
-			account, err = b.wallet.AccountPropertiesByName(
+			a, err := b.wallet.AccountPropertiesByName(
 				scope, name,
 			)
 			if waddrmgr.IsError(err, waddrmgr.ErrAccountNotFound) {
@@ -650,17 +649,16 @@ func (b *BtcWallet) ListAccounts(name string,
 				return nil, err
 			}
 
-			break
+			res = append(res, a)
 		}
-		if account == nil {
+
+		if len(res) == 0 {
 			str := fmt.Sprintf("account %s not found", name)
 			return nil, waddrmgr.ManagerError{
 				ErrorCode:   waddrmgr.ErrAccountNotFound,
 				Description: str,
 			}
 		}
-
-		res = append(res, account)
 
 	// Only the key scope filter was provided, so we'll return all accounts
 	// matching it.
