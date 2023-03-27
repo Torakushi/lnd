@@ -3294,6 +3294,8 @@ func (l *channelLink) processExitHop(pd *lnwallet.PaymentDescriptor,
 		return nil
 	}
 
+	time.Sleep(20 * time.Second)
+
 	// Process the received resolution.
 	return l.processHtlcResolution(event, htlc)
 }
