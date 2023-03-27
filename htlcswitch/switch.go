@@ -1277,6 +1277,7 @@ func (s *Switch) handlePacketForward(packet *htlcPacket) error {
 		return destination.handleSwitchPacket(packet)
 
 	case *lnwire.UpdateFailHTLC, *lnwire.UpdateFulfillHTLC:
+		time.Sleep(30 * time.Second)
 		// If the source of this packet has not been set, use the
 		// circuit map to lookup the origin.
 		circuit, err := s.closeCircuit(packet)

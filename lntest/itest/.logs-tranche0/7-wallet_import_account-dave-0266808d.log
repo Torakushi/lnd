@@ -1,0 +1,993 @@
+2023-02-17 11:35:58.668 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/lnd.conf: no such file or directory
+2023-02-17 11:35:58.669 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:35:58.669 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:35:58.669 [INF] LTND: Pprof listening on 127.0.0.1:5592
+2023-02-17 11:35:58.670 [INF] RPCS: Generating TLS certificates...
+2023-02-17 11:35:58.670 [INF] RPCS: Done generating TLS certificates
+2023-02-17 11:35:58.671 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.671 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.671 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.671 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:35:58.671 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.671 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:35:58.671 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:35:58.671 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.671 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.672 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:35:58.672 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:35:58.672 [INF] RPCS: RPC server listening on 127.0.0.1:5590
+2023-02-17 11:35:58.672 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:35:58.672 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:35:58.672 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:35:58.673 [INF] RPCS: gRPC proxy started at 127.0.0.1:5591
+2023-02-17 11:35:58.673 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:35:58.673 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:35:58.689 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:35:58.708 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:35:58.708 [DBG] CHDB: Finished populating in-memory channel graph (took 78.333µs, num_node_features=0, num_nodes=0, num_channels=0)
+2023-02-17 11:35:58.708 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:35:58.708 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:35:58.708 [INF] LTND: Database(s) now open (time_to_open=35.25875ms)!
+2023-02-17 11:35:58.768 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:35:58.810 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:35:58.839 [INF] LNWL: Opened wallet
+2023-02-17 11:35:58.840 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:35:58.896 [INF] CHRE: LightningWallet opened
+2023-02-17 11:35:58.896 [DBG] LNWL: Locating suitable block for birthday 2023-02-15 11:35:58 +0100 CET between blocks 0-460
+2023-02-17 11:35:58.896 [DBG] LNWL: Checking candidate block: height=230, hash=4d3481afe9252f10668f653f66b5e03e75a1ecbf304a088d689b7e8309f0bd55, timestamp=2023-02-17 11:35:42 +0100 CET
+2023-02-17 11:35:58.897 [DBG] LNWL: Checking candidate block: height=115, hash=16cdc0d0b0be016e34d22793b7004709c7a44b42333ebbc7283376b616afee5c, timestamp=2023-02-17 11:35:22 +0100 CET
+2023-02-17 11:35:58.897 [DBG] LNWL: Checking candidate block: height=57, hash=32cdd3253d54f3f106a85928685711e29ff791419effe0c62ca97ccb6b205c9a, timestamp=2023-02-17 11:35:13 +0100 CET
+2023-02-17 11:35:58.897 [DBG] LNWL: Checking candidate block: height=28, hash=0910ed847897c6f6efd34f5fa3025aafb910b5ccf2618043cc7bc6519dda0605, timestamp=2023-02-17 11:35:08 +0100 CET
+2023-02-17 11:35:58.898 [DBG] LNWL: Checking candidate block: height=14, hash=2c083cf759d4281706946a584f604084e6f2fb0884e740aaa88579b648c069f2, timestamp=2023-02-17 11:35:06 +0100 CET
+2023-02-17 11:35:58.898 [DBG] LNWL: Checking candidate block: height=7, hash=18ebf4406155181a2ef0e2c3fbf8199eca62e9cf9db8083f379d7e8e748fdf99, timestamp=2023-02-17 11:35:04 +0100 CET
+2023-02-17 11:35:58.898 [DBG] LNWL: Checking candidate block: height=3, hash=3cdc129a786a72f5b6b87290ef4df352ea8fbfc1034e7ee0002e1ae8202898d1, timestamp=2023-02-17 11:35:03 +0100 CET
+2023-02-17 11:35:58.898 [DBG] LNWL: Checking candidate block: height=1, hash=7128bb5744e350ecad9e6f30f19624fe37bfa01d031c39947d635bcb578eb32f, timestamp=2023-02-17 11:35:02 +0100 CET
+2023-02-17 11:35:58.899 [DBG] LNWL: Checking candidate block: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, timestamp=2011-02-03 00:16:42 +0100 CET
+2023-02-17 11:35:58.899 [DBG] LNWL: Found birthday block: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, timestamp=2011-02-03 00:16:42 +0100 CET
+2023-02-17 11:35:58.947 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:35:58.948 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:35:58.948 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:35:58.948 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:35:58.961 [INF] LNWL: Started rescan from block 0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 (height 0) for 0 addresses
+2023-02-17 11:35:58.965 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:35:58.965 [INF] LNWL: Catching up block hashes to height 460, this might take a while
+2023-02-17 11:35:58.986 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:35:58.996 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:35:58.996 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=19.666µs
+2023-02-17 11:35:58.996 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:35:59.005 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:35:59.005 [INF] SWPR: Migrating UTXO nursery finalized TXIDs
+2023-02-17 11:35:59.015 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:35:59.015 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:35:59.015 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:35:59.015 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:35:59.015 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:35:59.015 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:35:59.015 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:35:59.016 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:35:59.016 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:59.016 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:35:59.016 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:35:59.016 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:59.016 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:35:59.016 [INF] SGNR: Making macaroons for Signer RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/signer.macaroon
+2023-02-17 11:35:59.027 [INF] RRPC: Making macaroons for Router RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/router.macaroon
+2023-02-17 11:35:59.038 [INF] WLKT: Baking macaroons for WalletKit RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/walletkit.macaroon
+2023-02-17 11:35:59.049 [INF] NTFR: Baking macaroons for ChainNotifier RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/chainnotifier.macaroon
+2023-02-17 11:35:59.058 [INF] IRPC: Baking macaroons for invoices RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/invoices.macaroon
+2023-02-17 11:35:59.070 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:35:59.070 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:35:59.070 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:35:59.071 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:59.071 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:35:59.071 [INF] LTND: Waiting for chain backend to finish sync, start_height=460
+2023-02-17 11:35:59.147 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:35:59.147 [INF] LNWL: Finished rescan for 0 addresses (synced to block 11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424, height 460)
+2023-02-17 11:36:00.074 [INF] LTND: Chain backend is fully synced (end_height=460)!
+2023-02-17 11:36:00.074 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:36:00.074 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:36:00.074 [INF] LNWL: SigPool starting
+2023-02-17 11:36:00.074 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:36:00.096 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:36:00.096 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:36:00.096 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:36:00.096 [INF] SWPR: Sweeper starting
+2023-02-17 11:36:00.097 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:36:00.097 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.097 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:36:00.097 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:36:00.097 [INF] FNDG: Funding manager starting
+2023-02-17 11:36:00.097 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.097 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:36:00.097 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:36:00.097 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.097 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:36:00.097 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.097 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.098 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:36:00.097 [DBG] HSWC: InterceptableSwitch running: height=460, requireInterceptor=false
+2023-02-17 11:36:00.098 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.098 [INF] CRTR: Channel Router starting
+2023-02-17 11:36:00.098 [DBG] DISC: New block: height=460, hash=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:36:00.107 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:00.107 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:36:00.115 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:36:00.115 [INF] CRTR: Prune tip for Channel Graph: height=460, hash=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:36:00.125 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:36:00.134 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:36:00.134 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.134 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:36:00.134 [INF] HSWC: Onion processor starting
+2023-02-17 11:36:00.144 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:36:00.144 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:00.144 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:36:00.144 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:36:00.144 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:36:00.161 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:00.170 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:00.171 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:36:00.171 [INF] BTCN: Server listening on 127.0.0.1:5589
+2023-02-17 11:36:00.171 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:36:00.171 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:36:00.171 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:36:00.174 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:36:00.190 [ERR] RPCS: [/walletrpc.WalletKit/ImportAccount]: account 'carol' already exists
+2023-02-17 11:36:00.201 [DBG] RPCS: [newaddress] account=carol type=WITNESS_PUBKEY_HASH addr=bcrt1qyu26cwmpej9g0k9chpqxu7t765tvqy2xx2j20v
+2023-02-17 11:36:00.241 [INF] LNWL: Inserting unconfirmed transaction d578d37a5bd8666020575d23d8714538dcfdc41973c207c42bde3ca8912ddea0
+2023-02-17 11:36:00.241 [DBG] LNWL: Marked address bcrt1qyu26cwmpej9g0k9chpqxu7t765tvqy2xx2j20v used
+2023-02-17 11:36:00.833 [DBG] RPCS: [walletbalance] Total balance=1 BTC (confirmed=0 BTC, unconfirmed=1 BTC)
+2023-02-17 11:36:01.038 [INF] CRTR: Pruning channel graph using block 2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b (height=461)
+2023-02-17 11:36:01.038 [INF] LNWL: Marking unconfirmed transaction d578d37a5bd8666020575d23d8714538dcfdc41973c207c42bde3ca8912ddea0 mined in block 461
+2023-02-17 11:36:01.038 [DBG] LNWL: Marked address bcrt1qyu26cwmpej9g0k9chpqxu7t765tvqy2xx2j20v used
+2023-02-17 11:36:01.074 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:01.074 [INF] CRTR: Block 2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b (height=461) closed 0 channels
+2023-02-17 11:36:01.104 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 461
+2023-02-17 11:36:01.116 [INF] NTFN: New block: height=461, sha=2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b
+2023-02-17 11:36:01.121 [DBG] SWPR: New block: height=461, sha=2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b
+2023-02-17 11:36:01.121 [INF] UTXN: Attempting to graduate height=461: num_kids=0, num_babies=0
+2023-02-17 11:36:01.121 [DBG] DISC: New block: height=461, hash=2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b
+2023-02-17 11:36:02.160 [DBG] RPCS: [walletbalance] Total balance=1 BTC (confirmed=1 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:02.165 [DBG] RPCS: [walletbalance] Total balance=1 BTC (confirmed=1 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:02.211 [INF] LNWL: Inserting unconfirmed transaction 0ce46c4cc71701adb3932fc7f96e09feb1c469eabc8e3643535dcb2f546b72b6
+2023-02-17 11:36:02.212 [DBG] LNWL: Marked address bcrt1qellr56qv6adzpa7jk0f2atz4r95d0ee9qwee4u used
+2023-02-17 11:36:02.430 [DBG] RPCS: [walletbalance] Total balance=0.00009859 BTC (confirmed=0 BTC, unconfirmed=0.00009859 BTC)
+2023-02-17 11:36:02.638 [INF] CRTR: Pruning channel graph using block 6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b (height=462)
+2023-02-17 11:36:02.641 [INF] LNWL: Marking unconfirmed transaction 0ce46c4cc71701adb3932fc7f96e09feb1c469eabc8e3643535dcb2f546b72b6 mined in block 462
+2023-02-17 11:36:02.649 [DBG] LNWL: Marked address bcrt1qellr56qv6adzpa7jk0f2atz4r95d0ee9qwee4u used
+2023-02-17 11:36:02.665 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:02.737 [INF] CRTR: Block 6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b (height=462) closed 0 channels
+2023-02-17 11:36:02.738 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 462
+2023-02-17 11:36:02.753 [INF] NTFN: New block: height=462, sha=6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b
+2023-02-17 11:36:02.753 [DBG] SWPR: New block: height=462, sha=6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b
+2023-02-17 11:36:02.754 [INF] UTXN: Attempting to graduate height=462: num_kids=0, num_babies=0
+2023-02-17 11:36:02.754 [DBG] DISC: New block: height=462, hash=6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b
+2023-02-17 11:36:03.769 [DBG] RPCS: [walletbalance] Total balance=0.00009859 BTC (confirmed=0.00009859 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:03.781 [DBG] RPCS: [newaddress] account=carol type=WITNESS_PUBKEY_HASH addr=bcrt1qf42e7f3gdhfh62kzwu5yq3mr93ztynnvt3udmg
+2023-02-17 11:36:03.798 [DBG] RPCS: [walletbalance] Total balance=0.00009859 BTC (confirmed=0.00009859 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:03.839 [INF] LNWL: Inserting unconfirmed transaction 2ff30d3b12969253e4be9368d2f57b0bfd49ba1f22d67cc8f8c9f622dd8c5db4
+2023-02-17 11:36:03.844 [DBG] LNWL: Marked address bcrt1qf42e7f3gdhfh62kzwu5yq3mr93ztynnvt3udmg used
+2023-02-17 11:36:04.043 [DBG] RPCS: [walletbalance] Total balance=1.00009859 BTC (confirmed=0.00009859 BTC, unconfirmed=1 BTC)
+2023-02-17 11:36:04.255 [INF] LNWL: Marking unconfirmed transaction 2ff30d3b12969253e4be9368d2f57b0bfd49ba1f22d67cc8f8c9f622dd8c5db4 mined in block 463
+2023-02-17 11:36:04.255 [DBG] LNWL: Marked address bcrt1qf42e7f3gdhfh62kzwu5yq3mr93ztynnvt3udmg used
+2023-02-17 11:36:04.257 [INF] CRTR: Pruning channel graph using block 285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138 (height=463)
+2023-02-17 11:36:04.312 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:04.332 [INF] CRTR: Block 285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138 (height=463) closed 0 channels
+2023-02-17 11:36:04.369 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 463
+2023-02-17 11:36:04.373 [INF] NTFN: New block: height=463, sha=285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138
+2023-02-17 11:36:04.373 [DBG] DISC: New block: height=463, hash=285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138
+2023-02-17 11:36:04.373 [DBG] SWPR: New block: height=463, sha=285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138
+2023-02-17 11:36:04.373 [INF] UTXN: Attempting to graduate height=463: num_kids=0, num_babies=0
+2023-02-17 11:36:05.378 [DBG] RPCS: [walletbalance] Total balance=1.00009859 BTC (confirmed=1.00009859 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:05.380 [DBG] RPCS: [walletbalance] Total balance=1.00009859 BTC (confirmed=1.00009859 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:05.382 [DBG] RPCS: [connectpeer] requested connection to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.383 [DBG] SRVR: Connecting to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.417 [INF] SRVR: Established connection to: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.417 [INF] SRVR: Finalizing connection to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, inbound=false
+2023-02-17 11:36:05.417 [DBG] PRNF: PeerNotifier notifying peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 online
+2023-02-17 11:36:05.417 [DBG] RPCS: Connected to peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.419 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending Init to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.420 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received Init from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.420 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Loaded 0 active channels from database
+2023-02-17 11:36:05.420 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561 is online
+2023-02-17 11:36:05.420 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Negotiated chan series queries
+2023-02-17 11:36:05.420 [INF] DISC: Creating new GossipSyncer for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:05.421 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:05.421 [DBG] DISC: Created new GossipSyncer[state=chansSynced type=PassiveSync] for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.421 [DBG] DISC: Starting GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:36:05.421 [DBG] DISC: Attempting initial historical sync with GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:36:05.421 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=PassiveSync
+2023-02-17 11:36:05.421 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=syncingChans, type=PassiveSync
+2023-02-17 11:36:05.421 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): requesting new chans from height=0 and 463 blocks after
+2023-02-17 11:36:05.421 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=waitingQueryRangeReply, type=PassiveSync
+2023-02-17 11:36:05.421 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending QueryChannelRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, start_height=0, end_height=462) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.422 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received QueryChannelRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, start_height=0, end_height=462) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.422 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): filtering chan range: start_height=0, num_blocks=463
+2023-02-17 11:36:05.422 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): sending final chan range chunk, size=0
+2023-02-17 11:36:05.423 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ReplyChannelRange(start_height=0, end_height=462, num_chans=0, encoding=0) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.423 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ReplyChannelRange(start_height=0, end_height=462, num_chans=0, encoding=0) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.423 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): buffering chan range reply of size=0
+2023-02-17 11:36:05.423 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): filtering through 0 chans
+2023-02-17 11:36:05.423 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): remote peer has no new chans
+2023-02-17 11:36:05.423 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=PassiveSync
+2023-02-17 11:36:05.423 [DBG] DISC: Initial historical sync completed
+2023-02-17 11:36:05.423 [DBG] DISC: Attempting to transition 1 passive GossipSyncers to active
+2023-02-17 11:36:05.423 [DBG] DISC: Transitioning passive GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) to active
+2023-02-17 11:36:05.423 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): transitioning from PassiveSync to ActiveSync
+2023-02-17 11:36:05.423 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): applying gossipFilter(start=2023-02-17 11:36:05.423781 +0100 CET m=+6.774032376, end=2159-03-26 19:04:20.423781 +0200 CEST)
+2023-02-17 11:36:05.424 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=ActiveSync
+2023-02-17 11:36:05.424 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending GossipTimestampRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, first_stamp=2023-02-17 11:36:05 +0100 CET, stamp_range=4294967295) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.424 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received GossipTimestampRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, first_stamp=2023-02-17 11:36:05 +0100 CET, stamp_range=4294967295) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:05.424 [DBG] CHDB: ChanUpdatesInHorizon hit percentage: NaN (0/0)
+2023-02-17 11:36:05.424 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): applying new update horizon: start=2023-02-17 11:36:05 +0100 CET, end=2159-03-26 19:04:20 +0200 CEST, backlog_size=0
+2023-02-17 11:36:05.624 [DBG] RPCS: [listpeers] yielded [022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561] peers
+2023-02-17 11:36:06.246 [DBG] RPCS: [openchannel] request to NodeKey(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) allocation(us=16777215, them=0)
+2023-02-17 11:36:06.249 [WRN] LNWL: Web API does not have a fee rate for target=6, using the fee rate for target=1 instead
+2023-02-17 11:36:06.249 [DBG] LNWL: Web API returning 12500 sat/kw for conf target of 6
+2023-02-17 11:36:06.249 [DBG] RPCS: [openchannel]: using fee of 12500 sat/kw for funding tx
+2023-02-17 11:36:06.249 [INF] FNDG: Initiating fundingRequest(local_amt=0.16777215 BTC (subtract_fees=false), push_amt=0 mSAT, chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, min_confs=1)
+2023-02-17 11:36:06.254 [WRN] LNWL: Web API does not have a fee rate for target=3, using the fee rate for target=1 instead
+2023-02-17 11:36:06.255 [DBG] LNWL: Web API returning 12500 sat/kw for conf target of 3
+2023-02-17 11:36:06.255 [DBG] LNWL: Registered funding intent for PendingChanID: 1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2
+2023-02-17 11:36:06.364 [DBG] LNWL: Successfully handled funding reservation with pendingChanID: 1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2, reservationID: 1
+2023-02-17 11:36:06.364 [INF] FNDG: Target commit tx sat/kw for pendingID(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2): 12500
+2023-02-17 11:36:06.364 [INF] FNDG: Dust limit for pendingID(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2): 0.00000354 BTC
+2023-02-17 11:36:06.364 [INF] FNDG: Starting funding workflow with 127.0.0.1:5561 for pending_id(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2), committype=tweakless
+2023-02-17 11:36:06.364 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending MsgOpenChannel(temp_chan_id=1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2, chain=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, csv=4, amt=0.16777215 BTC, push_amt=0 mSAT, reserve=0.00167772 BTC, flags=1) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:06.456 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received MsgAcceptChannel(temp_chan_id=1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2, reserve=0.00167772 BTC, csv=4, num_confs=1) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:06.457 [INF] FNDG: Recv'd fundingResponse for pending_id(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2)
+2023-02-17 11:36:06.457 [DBG] LNWL: Advancing PSBT funding flow for pending_id(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2), binding keys local_key=&{{0 0} 0x14001e2e6e0}, remote_key=020756b4ca23f3e0044e0adbc96f00b4daf1bb75e081055774e75e0deda713a77a
+2023-02-17 11:36:06.457 [INF] FNDG: pendingChan(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2): remote party proposes num_confs=1, csv_delay=4
+2023-02-17 11:36:06.457 [DBG] FNDG: Remote party accepted commitment constraints: (channeldb.ChannelConstraints) {
+ DustLimit: (btcutil.Amount) 0.00000354 BTC,
+ ChanReserve: (btcutil.Amount) 0.00167772 BTC,
+ MaxPendingAmount: (lnwire.MilliSatoshi) 16609443000 mSAT,
+ MinHTLC: (lnwire.MilliSatoshi) 1 mSAT,
+ MaxAcceptedHtlcs: (uint16) 483,
+ CsvDelay: (uint16) 4
+}
+
+2023-02-17 11:36:06.484 [DBG] RPCS: Verifying PSBT for pending_id=1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2
+2023-02-17 11:36:06.488 [DBG] RPCS: Finalizing PSBT for pending_id=1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2
+2023-02-17 11:36:06.493 [DBG] FNDG: Creating chan barrier for ChanID(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37)
+2023-02-17 11:36:06.493 [INF] FNDG: Generated ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) for pending_id(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2)
+2023-02-17 11:36:06.493 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending MsgFundingCreated(temp_chan_id=1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2, chan_point=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:06.509 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received MsgFundingSigned(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:06.540 [INF] FNDG: Broadcasting funding tx for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): 02000000000101b45d8cdd22f6c9f8c87cd6221fba49fd0b7bf5d26893bee4539296123b0df32f0000000000ffffffff02ffffff0000000000220020c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e54468e0f5040000000016001452aef2ecb76ff08ee48d0b5ed61b3a8f79a9e93302483045022100932372a321c9195555ac368bd80b05a3cf3b4bf36cb4cf75a2f78da4f5755c0d02203fe14f930a4c6d3b239451ebb081449fe549850e887b7a60da6d219ac7de046a012103ff11a57ccaa24fdbeb69f1511387de85da40ddf84b00677a07d134c723dd2ab900000000
+2023-02-17 11:36:06.540 [INF] LNWL: Inserting unconfirmed transaction 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897
+2023-02-17 11:36:06.540 [DBG] LNWL: Marked address bcrt1q22h09m9hdlcgaeydpd0dvxe63au6n6fnwn0k2t used
+2023-02-17 11:36:06.552 [INF] CNCT: Creating new ChannelArbitrator for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0)
+2023-02-17 11:36:06.552 [DBG] CNCT: New ChainEventSubscription(id=0) for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0)
+2023-02-17 11:36:06.574 [DBG] CNCT: Starting ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0), htlc_set=(map[contractcourt.HtlcSetKey]contractcourt.htlcSet) (len=2) {
+ (contractcourt.HtlcSetKey) LocalHtlcSet: (contractcourt.htlcSet) {
+  incomingHTLCs: (map[uint64]channeldb.HTLC) {
+  },
+  outgoingHTLCs: (map[uint64]channeldb.HTLC) {
+  }
+ },
+ (contractcourt.HtlcSetKey) RemoteHtlcSet: (contractcourt.htlcSet) {
+  incomingHTLCs: (map[uint64]channeldb.HTLC) {
+  },
+  outgoingHTLCs: (map[uint64]channeldb.HTLC) {
+  }
+ }
+}
+, state=StateDefault
+2023-02-17 11:36:06.592 [INF] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): starting state=StateDefault, trigger=chainTrigger, triggerHeight=463
+2023-02-17 11:36:06.596 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:06.596 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=463) examining active HTLC's
+2023-02-17 11:36:06.596 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=463, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:06.596 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:06.596 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:06.596 [DBG] CNCT: Starting chain watcher for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0)
+2023-02-17 11:36:06.596 [INF] NTFN: New spend subscription: spend_id=1, outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544, height_hint=463
+2023-02-17 11:36:06.612 [INF] NTFN: Dispatching historical spend rescan for outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544, start=463, end=463
+2023-02-17 11:36:06.641 [DBG] NTFN: Updated spend hint to height=463 for unconfirmed spend request outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544
+2023-02-17 11:36:06.641 [INF] FNDG: Finalizing pending_id(1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2) over ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0), waiting for channel open on-chain
+2023-02-17 11:36:06.641 [INF] NTFN: New confirmation subscription: conf_id=1, txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897, num_confs=1 height_hint=463
+2023-02-17 11:36:06.641 [DBG] NTFN: Dispatching historical confirmation rescan for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897
+2023-02-17 11:36:06.641 [INF] FNDG: Waiting for funding tx (370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897) to reach 1 confirmations
+2023-02-17 11:36:06.642 [DBG] CHBU: Adding channel 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0 to backup state
+2023-02-17 11:36:06.642 [INF] CHBU: Updating on-disk multi SCB backup: num_old_chans=0, num_new_chans=1
+2023-02-17 11:36:06.641 [INF] CNCT: Close observer for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) active
+2023-02-17 11:36:06.643 [DBG] NTFN: Confirmation details for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897 not found during historical dispatch, waiting to dispatch at tip
+2023-02-17 11:36:06.664 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:06.674 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:06.848 [DBG] RPCS: [walletbalance] Total balance=0.83232491 BTC (confirmed=0.00009859 BTC, unconfirmed=0.83222632 BTC)
+2023-02-17 11:36:07.073 [INF] LNWL: Marking unconfirmed transaction 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897 mined in block 464
+2023-02-17 11:36:07.073 [DBG] LNWL: Marked address bcrt1q22h09m9hdlcgaeydpd0dvxe63au6n6fnwn0k2t used
+2023-02-17 11:36:07.073 [INF] CRTR: Pruning channel graph using block 6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2 (height=464)
+2023-02-17 11:36:07.115 [DBG] NTFN: Filtering 2 txns for 1 spend requests at height 464
+2023-02-17 11:36:07.120 [DBG] NTFN: Found initial confirmation of txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897: height=464, hash=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.119 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.120 [INF] CRTR: Block 6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2 (height=464) closed 0 channels
+2023-02-17 11:36:07.200 [INF] NTFN: New block: height=464, sha=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.200 [INF] NTFN: Dispatching 1 confirmation notification for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897
+2023-02-17 11:36:07.200 [INF] FNDG: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) is now active: ChannelID(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37)
+2023-02-17 11:36:07.200 [DBG] FNDG: ChannelID(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) is now fully confirmed! (shortChanID=464:1:0)
+2023-02-17 11:36:07.210 [DBG] LNWL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): Restoring 0 dangling remote updates
+2023-02-17 11:36:07.210 [DBG] LNWL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): Restoring 0 local updates that the peer should sign
+2023-02-17 11:36:07.213 [DBG] SWPR: New block: height=464, sha=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.213 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:07.213 [INF] UTXN: Attempting to graduate height=464: num_kids=0, num_babies=0
+2023-02-17 11:36:07.213 [DBG] DISC: New block: height=464, hash=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.227 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=464) examining active HTLC's
+2023-02-17 11:36:07.227 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=464, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:07.227 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:07.227 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:07.262 [INF] CRTR: Pruning channel graph using block 58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac (height=465)
+2023-02-17 11:36:07.313 [DBG] CHBU: Adding channel 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0 to backup state
+2023-02-17 11:36:07.342 [INF] CHBU: Updating on-disk multi SCB backup: num_old_chans=1, num_new_chans=1
+2023-02-17 11:36:07.317 [DBG] LNWL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): Restoring 0 dangling remote updates
+2023-02-17 11:36:07.341 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.352 [INF] CRTR: Block 58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac (height=465) closed 0 channels
+2023-02-17 11:36:07.351 [DBG] LNWL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): Restoring 0 local updates that the peer should sign
+2023-02-17 11:36:07.352 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0 has opening state markedOpen
+2023-02-17 11:36:07.352 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 is online
+2023-02-17 11:36:07.352 [INF] FNDG: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) is online, sending FundingLocked for ChannelID(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37)
+2023-02-17 11:36:07.352 [DBG] NTFN: Filtering 1 txns for 1 spend requests at height 465
+2023-02-17 11:36:07.352 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending FundingLocked(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, next_point=039881180e1f962c022534842b1ea969057a23ea7dbd08bd5222031756d2e747bf) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:07.360 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received FundingLocked(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, next_point=03a7a5189f0fd7a3a5a9838ad23ac235bebc1ba617dc2686fb241d20aaa809d70a) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:07.365 [DBG] FNDG: Received FundingLocked for ChannelID(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) from peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:07.374 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0: successfully sent FundingLocked
+2023-02-17 11:36:07.380 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0 has opening state fundingLocked
+2023-02-17 11:36:07.374 [WRN] CHBU: Replacing disk backup for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) w/ newer version
+2023-02-17 11:36:07.389 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 is online
+2023-02-17 11:36:07.396 [INF] NTFN: New block: height=465, sha=58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac
+2023-02-17 11:36:07.397 [DBG] SWPR: New block: height=465, sha=58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac
+2023-02-17 11:36:07.397 [INF] UTXN: Attempting to graduate height=465: num_kids=0, num_babies=0
+2023-02-17 11:36:07.397 [DBG] DISC: New block: height=465, hash=58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac
+2023-02-17 11:36:07.397 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:07.503 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=465) examining active HTLC's
+2023-02-17 11:36:07.400 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0 has opening state fundingLocked
+2023-02-17 11:36:07.409 [INF] CRTR: Pruning channel graph using block 05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a (height=466)
+2023-02-17 11:36:07.426 [DBG] LNWL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): Restoring 0 dangling remote updates
+2023-02-17 11:36:07.458 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:07.503 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=465, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:07.503 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 is online
+2023-02-17 11:36:07.505 [DBG] LNWL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): Restoring 0 local updates that the peer should sign
+2023-02-17 11:36:07.522 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): New channel active ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) with peer
+2023-02-17 11:36:07.534 [DBG] CNCT: New ChainEventSubscription(id=1) for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0)
+2023-02-17 11:36:07.522 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:07.524 [DBG] DISC: Processing ChannelAnnouncement: peer=<nil>, short_chan_id=510173395353600
+2023-02-17 11:36:07.534 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.535 [INF] CRTR: Block 05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a (height=466) closed 0 channels
+2023-02-17 11:36:07.534 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:07.535 [DBG] DISC: Adding edge for short_chan_id: 510173395353600
+2023-02-17 11:36:07.535 [DBG] CRTR: Received ChannelEdgeInfo for channel 510173395353600
+2023-02-17 11:36:07.534 [INF] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): starting
+2023-02-17 11:36:07.534 [DBG] NTFN: Filtering 1 txns for 1 spend requests at height 466
+2023-02-17 11:36:07.534 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:07.535 [INF] HSWC: Trimming open circuits for chan_id=464:1:0, start_htlc_id=0
+2023-02-17 11:36:07.535 [INF] HSWC: Adding live link chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, short_chan_id=464:1:0
+2023-02-17 11:36:07.535 [INF] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): HTLC manager started, bandwidth=16598243000 mSAT
+2023-02-17 11:36:07.535 [INF] CNCT: Attempting to update ContractSignals for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0)
+2023-02-17 11:36:07.535 [DBG] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): loaded 0 fwd pks
+2023-02-17 11:36:07.540 [INF] CRTR: Pruning channel graph using block 3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924 (height=467)
+2023-02-17 11:36:07.556 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.566 [INF] CRTR: Block 3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924 (height=467) closed 0 channels
+2023-02-17 11:36:07.593 [INF] NTFN: New block: height=466, sha=05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a
+2023-02-17 11:36:07.611 [DBG] DISC: New block: height=466, hash=05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a
+2023-02-17 11:36:07.611 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:07.620 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=466) examining active HTLC's
+2023-02-17 11:36:07.611 [DBG] SWPR: New block: height=466, sha=05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a
+2023-02-17 11:36:07.611 [INF] UTXN: Attempting to graduate height=466: num_kids=0, num_babies=0
+2023-02-17 11:36:07.615 [DBG] CRTR: New channel discovered! Link connects 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 and 0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05 with ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): chan_id=510173395353600, capacity=0.16777215 BTC
+2023-02-17 11:36:07.620 [DBG] DISC: Finish adding edge for short_chan_id: 510173395353600
+2023-02-17 11:36:07.620 [DBG] DISC: Processed ChannelAnnouncement: peer=<nil>, short_chan_id=510173395353600
+2023-02-17 11:36:07.620 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=466, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:07.620 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:07.620 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:07.620 [DBG] CRTR: Waiting for dependent on job=lnwire.ChannelUpdate, scid=510173395353600
+2023-02-17 11:36:07.620 [DBG] DISC: Processing ChannelUpdate: peer=<nil>, short_chan_id=510173395353600, 
+2023-02-17 11:36:07.621 [DBG] DISC: Validating ChannelUpdate: channel=510173395353600, from node=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05, has edge=false
+2023-02-17 11:36:07.621 [DBG] NTFN: Filtering 1 txns for 1 spend requests at height 467
+2023-02-17 11:36:07.621 [DBG] CRTR: Waiting for dependent on job=lnwire.ChannelEdgePolicy, scid=510173395353600
+2023-02-17 11:36:07.621 [DBG] CRTR: Received ChannelEdgePolicy for channel 510173395353600
+2023-02-17 11:36:07.641 [DBG] CRTR: New channel update applied: (*channeldb.ChannelEdgePolicy)(0x14001ee80a0)({
+ SigBytes: ([]uint8) (len=71 cap=71) {
+  00000000  30 45 02 21 00 86 1e fd  c9 f7 6e 2b c0 00 05 fb  |0E.!......n+....|
+  00000010  dc 5b dc a7 a4 5b e5 d5  95 17 2c be 85 5a 94 52  |.[...[....,..Z.R|
+  00000020  d4 f7 e8 a1 7a 02 20 41  c1 64 f6 76 ff 30 33 5d  |....z. A.d.v.03]|
+  00000030  2d 65 97 52 22 78 76 05  ae ce ca 40 9e c5 16 d3  |-e.R"xv....@....|
+  00000040  53 61 9f 92 b1 c5 86                              |Sa.....|
+ },
+ sig: (*ecdsa.Signature)(<nil>),
+ ChannelID: (uint64) 510173395353600,
+ LastUpdate: (time.Time) 2023-02-17 11:36:07 +0100 CET,
+ MessageFlags: (lnwire.ChanUpdateMsgFlags) 00000001,
+ ChannelFlags: (lnwire.ChanUpdateChanFlags) 00000001,
+ TimeLockDelta: (uint16) 40,
+ MinHTLC: (lnwire.MilliSatoshi) 1000 mSAT,
+ MaxHTLC: (lnwire.MilliSatoshi) 16609443000 mSAT,
+ FeeBaseMSat: (lnwire.MilliSatoshi) 1000 mSAT,
+ FeeProportionalMillionths: (lnwire.MilliSatoshi) 1 mSAT,
+ Node: (*channeldb.LightningNode)(<nil>),
+ ExtraOpaqueData: ([]uint8) <nil>,
+ db: (walletdb.DB) <nil>
+})
+
+2023-02-17 11:36:07.645 [DBG] DISC: The message ChannelUpdate has no AuthProof, sending the update to remote peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:07.659 [INF] NTFN: New block: height=467, sha=3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924
+2023-02-17 11:36:07.660 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:07.669 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=467) examining active HTLC's
+2023-02-17 11:36:07.660 [DBG] DISC: New block: height=467, hash=3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924
+2023-02-17 11:36:07.660 [INF] UTXN: Attempting to graduate height=467: num_kids=0, num_babies=0
+2023-02-17 11:36:07.660 [DBG] SWPR: New block: height=467, sha=3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924
+2023-02-17 11:36:07.683 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=467, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:07.688 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:07.688 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:07.689 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000000, update_time=2023-02-17 11:36:07 +0100 CET) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:07.689 [INF] CRTR: Pruning channel graph using block 12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423 (height=468)
+2023-02-17 11:36:07.695 [DBG] DISC: Processed ChannelUpdate: peer=<nil>, short_chan_id=510173395353600, timestamp=2023-02-17 11:36:07 +0100 CET
+2023-02-17 11:36:07.695 [DBG] DISC: Requesting online notification for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:07.760 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 is online
+2023-02-17 11:36:07.760 [DBG] DISC: Peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 is now online, proceeding to send pending messages
+2023-02-17 11:36:07.760 [DBG] DISC: Requesting offline notification for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:07.760 [DBG] DISC: Successfully sent ChannelUpdate message for channel=464:1:0 with peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 upon reconnection
+2023-02-17 11:36:07.706 [DBG] DISC: Processing ChannelUpdate: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, short_chan_id=510173395353600, 
+2023-02-17 11:36:07.749 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0: successfully added to router graph
+2023-02-17 11:36:07.760 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0 has opening state addedToRouterGraph
+2023-02-17 11:36:07.760 [DBG] FNDG: Will announce channel 510173395353600 after ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) has gotten 6 confirmations
+2023-02-17 11:36:07.760 [DBG] NTFN: Using height hint 464 retrieved from cache for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897 instead of 463 for conf subscription
+2023-02-17 11:36:07.760 [INF] NTFN: New confirmation subscription: conf_id=2, txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897, num_confs=6 height_hint=464
+2023-02-17 11:36:07.760 [DBG] NTFN: Attempting to dispatch confirmation for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897 on registration since rescan has finished
+2023-02-17 11:36:07.760 [DBG] NTFN: Queueing 6 confirmation notification for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897 at tip 
+2023-02-17 11:36:07.760 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000001, update_time=2023-02-17 11:36:07 +0100 CET) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:07.767 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=2, num_channels=2
+2023-02-17 11:36:07.767 [INF] CRTR: Block 12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423 (height=468) closed 0 channels
+2023-02-17 11:36:07.767 [DBG] DISC: Validating ChannelUpdate: channel=510173395353600, from node=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, has edge=false
+2023-02-17 11:36:07.768 [DBG] CRTR: Received ChannelEdgePolicy for channel 510173395353600
+2023-02-17 11:36:07.769 [DBG] NTFN: Filtering 1 txns for 1 spend requests at height 468
+2023-02-17 11:36:07.772 [INF] CRTR: Pruning channel graph using block 0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972 (height=469)
+2023-02-17 11:36:07.789 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=2, num_channels=2
+2023-02-17 11:36:07.825 [INF] CRTR: Block 0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972 (height=469) closed 0 channels
+2023-02-17 11:36:07.856 [INF] NTFN: New block: height=468, sha=12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423
+2023-02-17 11:36:07.880 [INF] UTXN: Attempting to graduate height=468: num_kids=0, num_babies=0
+2023-02-17 11:36:07.880 [DBG] DISC: New block: height=468, hash=12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423
+2023-02-17 11:36:07.880 [DBG] SWPR: New block: height=468, sha=12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423
+2023-02-17 11:36:07.880 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:07.884 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=468) examining active HTLC's
+2023-02-17 11:36:07.884 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=468, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:07.884 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:07.884 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:07.885 [DBG] CRTR: New channel update applied: (*channeldb.ChannelEdgePolicy)(0x14001ee8320)({
+ SigBytes: ([]uint8) (len=71 cap=71) {
+  00000000  30 45 02 21 00 95 1e 08  dc c2 ab 68 f2 64 83 81  |0E.!.......h.d..|
+  00000010  77 ae 8c 36 63 af e7 c1  45 66 09 0d 13 02 bb 64  |w..6c...Ef.....d|
+  00000020  64 67 89 17 18 02 20 71  2f df 05 d8 2c a1 d0 cc  |dg.... q/...,...|
+  00000030  9b 00 ad 23 6d bd 5b 02  ca c3 97 5f 20 c8 e7 13  |...#m.[...._ ...|
+  00000040  91 4b 5e 6e 6a 58 7a                              |.K^njXz|
+ },
+ sig: (*ecdsa.Signature)(<nil>),
+ ChannelID: (uint64) 510173395353600,
+ LastUpdate: (time.Time) 2023-02-17 11:36:07 +0100 CET,
+ MessageFlags: (lnwire.ChanUpdateMsgFlags) 00000001,
+ ChannelFlags: (lnwire.ChanUpdateChanFlags) 00000000,
+ TimeLockDelta: (uint16) 40,
+ MinHTLC: (lnwire.MilliSatoshi) 1000 mSAT,
+ MaxHTLC: (lnwire.MilliSatoshi) 16609443000 mSAT,
+ FeeBaseMSat: (lnwire.MilliSatoshi) 1000 mSAT,
+ FeeProportionalMillionths: (lnwire.MilliSatoshi) 1 mSAT,
+ Node: (*channeldb.LightningNode)(<nil>),
+ ExtraOpaqueData: ([]uint8) {
+ },
+ db: (walletdb.DB) <nil>
+})
+
+2023-02-17 11:36:07.886 [DBG] DISC: Processed ChannelUpdate: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, short_chan_id=510173395353600, timestamp=2023-02-17 11:36:07 +0100 CET
+2023-02-17 11:36:07.888 [DBG] NTFN: Filtering 1 txns for 1 spend requests at height 469
+2023-02-17 11:36:07.940 [INF] NTFN: New block: height=469, sha=0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972
+2023-02-17 11:36:07.940 [DBG] DISC: New block: height=469, hash=0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972
+2023-02-17 11:36:07.940 [INF] NTFN: Dispatching 6 confirmation notification for txid=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897
+2023-02-17 11:36:07.971 [INF] FNDG: Announcing ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0), short_chan_id=464:1:0
+2023-02-17 11:36:07.940 [DBG] SWPR: New block: height=469, sha=0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972
+2023-02-17 11:36:07.940 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:07.940 [INF] UTXN: Attempting to graduate height=469: num_kids=0, num_babies=0
+2023-02-17 11:36:07.971 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received AnnounceSignatures(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, short_chan_id=510173395353600) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:07.988 [INF] DISC: Received new local announcement signature for 464:1:0
+2023-02-17 11:36:07.988 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=469) examining active HTLC's
+2023-02-17 11:36:08.005 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=469, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:08.005 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:08.005 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:08.005 [DBG] DISC: Successfully sent AnnounceSignatures message for channel=464:1:0 with peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:08.006 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending AnnounceSignatures(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, short_chan_id=510173395353600) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.023 [INF] DISC: 1/2 of channel ann proof received for short_chan_id=510173395353600, waiting for other half
+2023-02-17 11:36:08.024 [DBG] DISC: Processed network message AnnounceSignatures, returned len(announcements)=0
+2023-02-17 11:36:08.029 [INF] DISC: Received new remote announcement signature for 464:1:0
+2023-02-17 11:36:08.073 [INF] DISC: Fully valid channel proof for short_chan_id=510173395353600 constructed, adding to next ann batch
+2023-02-17 11:36:08.074 [DBG] DISC: Unable to fetch node announcement for 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48: node does not have node announcement
+2023-02-17 11:36:08.079 [DBG] DISC: Processed network message AnnounceSignatures, returned len(announcements)=4
+2023-02-17 11:36:08.079 [DBG] CRTR: Waiting for dependent on job=lnwire.NodeAnnouncement, pub=303236363830386462303737306430633434613363366339666661343638316133393139636630613662656166663561373461316639643837333463613735613035
+2023-02-17 11:36:08.079 [DBG] DISC: Processing NodeAnnouncement: peer=<nil>, timestamp=2023-02-17 11:36:08 +0100 CET, node=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05
+2023-02-17 11:36:08.081 [DBG] CRTR: Waiting for dependent on job=channeldb.LightningNode, pub=303236363830386462303737306430633434613363366339666661343638316133393139636630613662656166663561373461316639643837333463613735613035
+2023-02-17 11:36:08.079 [INF] DISC: Broadcasting 4 new announcements in 1 sub batches (local=true)
+2023-02-17 11:36:08.081 [DBG] SRVR: Broadcasting 4 messages
+2023-02-17 11:36:08.081 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ChannelAnnouncement(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.081 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000000, update_time=2023-02-17 11:36:07 +0100 CET) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.079 [INF] DISC: Broadcasting 0 new announcements in 1 sub batches (local=false)
+2023-02-17 11:36:08.081 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000001, update_time=2023-02-17 11:36:07 +0100 CET) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.081 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending NodeAnnouncement(node=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05, update_time=2023-02-17 11:35:58 +0100 CET) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.082 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ChannelAnnouncement(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.082 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000000, update_time=2023-02-17 11:36:07 +0100 CET) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.092 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000001, update_time=2023-02-17 11:36:07 +0100 CET) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.092 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received NodeAnnouncement(node=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, update_time=2023-02-17 11:36:07 +0100 CET) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.082 [WRN] DISC: ignoring remote ChannelAnnouncement for own channel
+2023-02-17 11:36:08.092 [DBG] DISC: Processing ChannelUpdate: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, short_chan_id=510173395353600, 
+2023-02-17 11:36:08.092 [DBG] DISC: Ignored stale edge policy for short_chan_id(510173395353600): peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, source=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, msg=ChannelUpdate, is_remote=true
+2023-02-17 11:36:08.092 [DBG] DISC: Processing ChannelUpdate: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, short_chan_id=510173395353600, 
+2023-02-17 11:36:08.092 [DBG] DISC: Ignored stale edge policy for short_chan_id(510173395353600): peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, source=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, msg=ChannelUpdate, is_remote=true
+2023-02-17 11:36:08.092 [DBG] CRTR: Waiting for dependent on job=lnwire.NodeAnnouncement, pub=303232633439313563643733323833393739643735613834373064623135663265386239313738643534396161316238366666346339376131303034336233613438
+2023-02-17 11:36:08.092 [DBG] DISC: Processing NodeAnnouncement: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, timestamp=2023-02-17 11:36:07 +0100 CET, node=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:08.093 [DBG] CRTR: Waiting for dependent on job=channeldb.LightningNode, pub=303232633439313563643733323833393739643735613834373064623135663265386239313738643534396161316238366666346339376131303034336233613438
+2023-02-17 11:36:08.098 [DBG] DISC: Processed NodeAnnouncement: peer=<nil>, timestamp=2023-02-17 11:36:08 +0100 CET, node=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05
+2023-02-17 11:36:08.098 [DBG] FNDG: Channel with ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0), short_chan_id=464:1:0 sent to gossiper
+2023-02-17 11:36:08.108 [DBG] FNDG: Channel(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37) with ShortChanID 464:1:0: successfully announced
+2023-02-17 11:36:08.109 [DBG] FNDG: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) with chan_id=1de559dc60d0946031ce4552915bb1483054445507640435821ae0e5866d22b2 not found in opening database, assuming already announced to the network
+2023-02-17 11:36:08.130 [DBG] DISC: Processed NodeAnnouncement: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, timestamp=2023-02-17 11:36:07 +0100 CET, node=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:08.148 [INF] DISC: Broadcasting 1 new announcements in 1 sub batches (local=false)
+2023-02-17 11:36:08.148 [INF] DISC: Broadcasting 1 new announcements in 1 sub batches (local=true)
+2023-02-17 11:36:08.149 [DBG] SRVR: Broadcasting 1 messages
+2023-02-17 11:36:08.148 [DBG] SRVR: Broadcasting 1 messages
+2023-02-17 11:36:08.149 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending NodeAnnouncement(node=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05, update_time=2023-02-17 11:36:08 +0100 CET) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:08.973 [DBG] RPCS: [walletbalance] Total balance=0.83232491 BTC (confirmed=0.83232491 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:09.033 [DBG] CRTR: Payment 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539 in state terminate=false, active_shards=0, rem_value=100000000 mSAT, fee_limit=9223372036854775807 mSAT
+2023-02-17 11:36:09.033 [DBG] CRTR: PaymentSession(53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539): pathfinding for amt=100000000 mSAT
+2023-02-17 11:36:09.034 [DBG] CRTR: Pathfinding absolute attempt cost: 200 sats
+2023-02-17 11:36:09.034 [DBG] CRTR: Found route: probability=0.95, hops=1, fee=0 mSAT
+2023-02-17 11:36:09.034 [DBG] CRTR: Pathfinding perf metrics: nodes=1, edges=1, time=326.208µs
+2023-02-17 11:36:09.076 [DBG] CRTR: Payment 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539 (pid=1) successfully sent to switch, route: 510173395353600 (100000000 mSAT), cltv 512
+2023-02-17 11:36:09.076 [DBG] CRTR: Payment 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539 in state terminate=false, active_shards=1, rem_value=0 mSAT, fee_limit=9223372036854775807 mSAT
+2023-02-17 11:36:09.076 [DBG] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): queueing keystone of ADD open circuit: (Chan ID=0:0:0, HTLC ID=1)->(Chan ID=464:1:0, HTLC ID=0)
+2023-02-17 11:36:09.078 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending UpdateAddHTLC(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, id=0, amt=100000000 mSAT, expiry=512, hash=53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.079 [DBG] HSWC: Subscribing to result for paymentID=1
+2023-02-17 11:36:09.151 [DBG] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): removing Add packet (Chan ID=0:0:0, HTLC ID=1) from mailbox
+2023-02-17 11:36:09.166 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending CommitSig(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, num_htlcs=1) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.181 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received RevokeAndAck(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, rev=80cff20a581d5575712a805978e918eee3fcbfe8d9727fa8e6eca39201c4ff42, next_point=02503d9064134638cff2dcad05dfe6bc3f9241f2703ede4f38138101f71b58ed78) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.212 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received CommitSig(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, num_htlcs=1) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.246 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending RevokeAndAck(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, rev=c2daa76e9999a051e6974a9c19f88c301455d5912ea58028d18411aa86297576, next_point=03a415f8eb0e1307a8ebc8ecb42861fd1a7eac18b24687979fe398ba386634bafc) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.317 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received UpdateFulfillHTLC(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, id=0, pre_image=8bcb340160587a20f41c6d772097171dca103059869fcf51cba27c63177f3e10) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.321 [DBG] HSWC: Closed completed SETTLE circuit for 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539: (0:0:0, 1) <-> (464:1:0, 0)
+2023-02-17 11:36:09.321 [DBG] HSWC: Storing result for paymentID=1
+2023-02-17 11:36:09.331 [DBG] HSWC: Tearing down open circuit with SETTLE pkt, removing circuit=(Chan ID=0:0:0, HTLC ID=1) with keystone=(Chan ID=464:1:0, HTLC ID=0)
+2023-02-17 11:36:09.331 [DBG] HSWC: Received network result *lnwire.UpdateFulfillHTLC for attemptID=1
+2023-02-17 11:36:09.351 [DBG] CRTR: Payment 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539 succeeded with pid=1
+2023-02-17 11:36:09.356 [DBG] CRTR: Reporting pair success to Mission Control: pair=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05 -> 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, amt=100000000 mSAT
+2023-02-17 11:36:09.356 [DBG] CRTR: Setting 0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05->022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 range to [100000000 mSAT-0 mSAT]
+2023-02-17 11:36:09.356 [DBG] HSWC: Closed completed SETTLE circuit for 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539: (0:0:0, 1) <-> (464:1:0, 0)
+2023-02-17 11:36:09.366 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received CommitSig(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, num_htlcs=0) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.367 [INF] SRVR: Adding preimage=8bcb340160587a20f41c6d772097171dca103059869fcf51cba27c63177f3e10 to witness cache
+2023-02-17 11:36:09.376 [DBG] CRTR: Payment 53f9bc0c8e20977a6a0aa3557efddbdfeb82f4ecc63e59640505d36f85942539 in state terminate=true, active_shards=0, rem_value=0 mSAT, fee_limit=9223372036854775807 mSAT
+2023-02-17 11:36:09.391 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending RevokeAndAck(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, rev=249c4485dfbc554e63faa7398c34f17b6ded53c6db4e87d2329a3f56ee9491a3, next_point=028c83e9f29cbbbeec561232b93e813a689f9b5986bcc14ee3f4364db1b515125a) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.427 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending CommitSig(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, num_htlcs=0) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.463 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received RevokeAndAck(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, rev=d08434c8506762e5c935136e88bc827197d036a9309a6f334ca92fc334a42c17, next_point=0301096d72e7f7b2fc0e63daec07f4ec5cb0fcc85a22070628d480841be5450cab) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:09.476 [DBG] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): settle-fail-filter &{1 [0]}
+2023-02-17 11:36:10.099 [DBG] HSWC: Sent 100000 satoshis and received 0 satoshis in the last 10 seconds (0.200000 tx/sec)
+2023-02-17 11:36:11.602 [WRN] LNWL: Web API does not have a fee rate for target=6, using the fee rate for target=1 instead
+2023-02-17 11:36:11.602 [DBG] LNWL: Web API returning 12500 sat/kw for conf target of 6
+2023-02-17 11:36:11.602 [DBG] RPCS: Target sat/kw for closing transaction: 12500
+2023-02-17 11:36:11.602 [DBG] HSWC: Requesting local channel close: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37
+2023-02-17 11:36:11.602 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Local close channel request delivered to peer
+2023-02-17 11:36:11.628 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Delivery addr for channel close: bcrt1penq7a8a389gvkl9al2m78qyrljfsddhescvk8p3cdefasc743w9qgq33ux
+2023-02-17 11:36:11.628 [INF] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): exited
+2023-02-17 11:36:11.628 [INF] HSWC: ChannelLink(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): stopping
+2023-02-17 11:36:11.628 [INF] HSWC: Removing channel link with ChannelID(976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37)
+2023-02-17 11:36:11.629 [INF] CHCL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): initiating shutdown
+2023-02-17 11:36:11.629 [INF] NANN: Announcing channel(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) disabled [requested]
+2023-02-17 11:36:11.629 [DBG] DISC: Processing ChannelUpdate: peer=<nil>, short_chan_id=510173395353600, 
+2023-02-17 11:36:11.629 [DBG] DISC: Validating ChannelUpdate: channel=510173395353600, from node=0266808db0770d0c44a3c6c9ffa4681a3919cf0a6beaff5a74a1f9d8734ca75a05, has edge=true
+2023-02-17 11:36:11.630 [DBG] CRTR: Received ChannelEdgePolicy for channel 510173395353600
+2023-02-17 11:36:11.640 [DBG] CRTR: New channel update applied: (*channeldb.ChannelEdgePolicy)(0x14001a2d400)({
+ SigBytes: ([]uint8) (len=71 cap=71) {
+  00000000  30 45 02 21 00 89 e7 57  fd 33 35 9d d4 ea a9 6e  |0E.!...W.35....n|
+  00000010  75 d6 39 00 fe bb 26 71  fc ca a9 8c fc 7b e7 34  |u.9...&q.....{.4|
+  00000020  47 36 e3 dc 06 02 20 32  47 e9 0c 72 c4 5e 7a 48  |G6.... 2G..r.^zH|
+  00000030  8f ea 08 3e 37 aa 70 1d  da 74 df fa a1 ca 79 d5  |...>7.p..t....y.|
+  00000040  ec ae b8 94 9b ea 46                              |......F|
+ },
+ sig: (*ecdsa.Signature)(<nil>),
+ ChannelID: (uint64) 510173395353600,
+ LastUpdate: (time.Time) 2023-02-17 11:36:11 +0100 CET,
+ MessageFlags: (lnwire.ChanUpdateMsgFlags) 00000001,
+ ChannelFlags: (lnwire.ChanUpdateChanFlags) 00000011,
+ TimeLockDelta: (uint16) 40,
+ MinHTLC: (lnwire.MilliSatoshi) 1000 mSAT,
+ MaxHTLC: (lnwire.MilliSatoshi) 16609443000 mSAT,
+ FeeBaseMSat: (lnwire.MilliSatoshi) 1000 mSAT,
+ FeeProportionalMillionths: (lnwire.MilliSatoshi) 1 mSAT,
+ Node: (*channeldb.LightningNode)(<nil>),
+ ExtraOpaqueData: ([]uint8) {
+ },
+ db: (walletdb.DB) <nil>
+})
+
+2023-02-17 11:36:11.640 [DBG] DISC: Processed ChannelUpdate: peer=<nil>, short_chan_id=510173395353600, timestamp=2023-02-17 11:36:11 +0100 CET
+2023-02-17 11:36:11.649 [INF] DISC: Broadcasting 0 new announcements in 1 sub batches (local=false)
+2023-02-17 11:36:11.649 [INF] DISC: Broadcasting 1 new announcements in 1 sub batches (local=true)
+2023-02-17 11:36:11.651 [DBG] SRVR: Broadcasting 1 messages
+2023-02-17 11:36:11.651 [INF] CHCL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): sending shutdown message
+2023-02-17 11:36:11.651 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000011, update_time=2023-02-17 11:36:11 +0100 CET) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.651 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending Shutdown(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, script=5120ccc1ee9fb13950cb7cbdfab7e38083fc9306b6f986196386386e53d863d58b8a) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.699 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received Shutdown(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, script=512017c2f6d00c936b64cd1c5b6ce1b1370b0a4d59fa62860460b918823f7dbcbe3b) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.699 [INF] CHCL: Ideal fee for closure of ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) is: 9650 sat (max_fee=28950 sat)
+2023-02-17 11:36:11.699 [INF] CHCL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): shutdown response received, entering fee negotiation
+2023-02-17 11:36:11.699 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ChannelUpdate(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, short_chan_id=510173395353600, mflags=00000001, cflags=00000010, update_time=2023-02-17 11:36:11 +0100 CET) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.699 [DBG] DISC: Processing ChannelUpdate: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, short_chan_id=510173395353600, 
+2023-02-17 11:36:11.699 [DBG] DISC: Validating ChannelUpdate: channel=510173395353600, from node=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48, has edge=true
+2023-02-17 11:36:11.699 [INF] CHCL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): proposing fee of 9650 sat to close chan
+2023-02-17 11:36:11.699 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ClosingSigned(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, fee_sat=0.0000965 BTC) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.700 [DBG] CRTR: Received ChannelEdgePolicy for channel 510173395353600
+2023-02-17 11:36:11.729 [DBG] CRTR: New channel update applied: (*channeldb.ChannelEdgePolicy)(0x14000cf2640)({
+ SigBytes: ([]uint8) (len=70 cap=70) {
+  00000000  30 44 02 20 1c dd dc 74  6e 02 29 68 e6 46 f6 92  |0D. ...tn.)h.F..|
+  00000010  2e 55 86 2b b7 12 b6 60  2b b6 98 ae 50 e8 76 2d  |.U.+...`+...P.v-|
+  00000020  2d a5 65 51 02 20 4e 8f  7c a4 0f 03 a5 d1 08 0a  |-.eQ. N.|.......|
+  00000030  9a 83 93 cc 15 8a 5a b8  1b 66 2e 6f 4f da c1 3a  |......Z..f.oO..:|
+  00000040  79 0e 19 53 5a c9                                 |y..SZ.|
+ },
+ sig: (*ecdsa.Signature)(<nil>),
+ ChannelID: (uint64) 510173395353600,
+ LastUpdate: (time.Time) 2023-02-17 11:36:11 +0100 CET,
+ MessageFlags: (lnwire.ChanUpdateMsgFlags) 00000001,
+ ChannelFlags: (lnwire.ChanUpdateChanFlags) 00000010,
+ TimeLockDelta: (uint16) 40,
+ MinHTLC: (lnwire.MilliSatoshi) 1000 mSAT,
+ MaxHTLC: (lnwire.MilliSatoshi) 16609443000 mSAT,
+ FeeBaseMSat: (lnwire.MilliSatoshi) 1000 mSAT,
+ FeeProportionalMillionths: (lnwire.MilliSatoshi) 1 mSAT,
+ Node: (*channeldb.LightningNode)(<nil>),
+ ExtraOpaqueData: ([]uint8) {
+ },
+ db: (walletdb.DB) <nil>
+})
+
+2023-02-17 11:36:11.730 [DBG] DISC: Processed ChannelUpdate: peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, short_chan_id=510173395353600, timestamp=2023-02-17 11:36:11 +0100 CET
+2023-02-17 11:36:11.740 [INF] LNWL: Inserting unconfirmed transaction 7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92
+2023-02-17 11:36:11.740 [DBG] LNWL: Marked address bcrt1penq7a8a389gvkl9al2m78qyrljfsddhescvk8p3cdefasc743w9qgq33ux used
+2023-02-17 11:36:11.741 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ClosingSigned(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, fee_sat=0.0000965 BTC) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.741 [INF] CHCL: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) fee of 0.0000965 BTC accepted, ending negotiation
+2023-02-17 11:36:11.749 [INF] DISC: Broadcasting 1 new announcements in 1 sub batches (local=false)
+2023-02-17 11:36:11.750 [DBG] SRVR: Broadcasting 1 messages
+2023-02-17 11:36:11.749 [INF] DISC: Broadcasting 0 new announcements in 1 sub batches (local=true)
+2023-02-17 11:36:11.771 [DBG] SRVR: Broadcasting 0 messages
+2023-02-17 11:36:11.766 [INF] CHCL: Broadcasting cooperative close tx: (*wire.MsgTx)(0x14000649a40)({
+ Version: (int32) 2,
+ TxIn: ([]*wire.TxIn) (len=1 cap=15) {
+  (*wire.TxIn)(0x14001851560)({
+   PreviousOutPoint: (wire.OutPoint) 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0,
+   SignatureScript: ([]uint8) <nil>,
+   Witness: (wire.TxWitness) (len=4 cap=4) {
+    ([]uint8) <nil>,
+    ([]uint8) (len=71 cap=144) {
+     00000000  30 44 02 20 20 8b 06 b2  6a 83 bc 45 da 77 ec 5f  |0D.  ...j..E.w._|
+     00000010  9b 34 d7 d1 03 84 d2 a6  fa 84 de 79 57 e9 03 a7  |.4.........yW...|
+     00000020  98 6a 7e 8a 02 20 13 ae  eb 73 85 8e e5 66 5b 5d  |.j~.. ...s...f[]|
+     00000030  a4 18 18 23 c1 1a 81 af  9e 3e 9b 2f a7 64 fa c3  |...#.....>./.d..|
+     00000040  a4 87 90 6f 81 6d 01                              |...o.m.|
+    },
+    ([]uint8) (len=71 cap=144) {
+     00000000  30 44 02 20 5c 62 ec a0  ff c4 08 64 8f 5c d3 ce  |0D. \b.....d.\..|
+     00000010  6d 35 3b ef bf 45 65 16  70 23 7e 3b 9e 3e 6e 98  |m5;..Ee.p#~;.>n.|
+     00000020  35 17 7a 29 02 20 7f 29  6d f2 cf 96 88 60 ad 25  |5.z). .)m....`.%|
+     00000030  0e f9 56 10 92 26 e4 9c  0f 60 c6 df 5d 29 e6 b9  |..V..&...`..])..|
+     00000040  50 22 aa fb 5a cf 01                              |P"..Z..|
+    },
+    ([]uint8) (len=71 cap=500) {
+     00000000  52 21 02 07 56 b4 ca 23  f3 e0 04 4e 0a db c9 6f  |R!..V..#...N...o|
+     00000010  00 b4 da f1 bb 75 e0 81  05 57 74 e7 5e 0d ed a7  |.....u...Wt.^...|
+     00000020  13 a7 7a 21 03 86 1e 03  c5 ae 1e dd 24 d8 77 cd  |..z!........$.w.|
+     00000030  10 cb e1 10 46 94 36 03  1f 16 e9 e1 c7 5f d7 d7  |....F.6......_..|
+     00000040  5f 45 d1 dd da 52 ae                              |_E...R.|
+    }
+   },
+   Sequence: (uint32) 4294967295
+  })
+ },
+ TxOut: ([]*wire.TxOut) (len=2 cap=15) {
+  (*wire.TxOut)(0x14001575740)({
+   Value: (int64) 100000,
+   PkScript: ([]uint8) (len=34 cap=34) {
+    00000000  51 20 17 c2 f6 d0 0c 93  6b 64 cd 1c 5b 6c e1 b1  |Q ......kd..[l..|
+    00000010  37 0b 0a 4d 59 fa 62 86  04 60 b9 18 82 3f 7d bc  |7..MY.b..`...?}.|
+    00000020  be 3b                                             |.;|
+   }
+  }),
+  (*wire.TxOut)(0x14001575720)({
+   Value: (int64) 16667565,
+   PkScript: ([]uint8) (len=34 cap=500) {
+    00000000  51 20 cc c1 ee 9f b1 39  50 cb 7c bd fa b7 e3 80  |Q .....9P.|.....|
+    00000010  83 fc 93 06 b6 f9 86 19  63 86 38 6e 53 d8 63 d5  |........c.8nS.c.|
+    00000020  8b 8a                                             |..|
+   }
+  })
+ },
+ LockTime: (uint32) 0
+})
+
+2023-02-17 11:36:11.787 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ClosingSigned(chan_id=976870698b04d573dc723db99ab614887de4db2a1d0ac0125c0be30714850c37, fee_sat=0.0000965 BTC) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:11.787 [INF] PEER: Waiting for confirmation of close of ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) with txid: 7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92
+2023-02-17 11:36:11.787 [INF] NTFN: New confirmation subscription: conf_id=3, txid=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92, num_confs=1 height_hint=469
+2023-02-17 11:36:11.787 [DBG] NTFN: Dispatching historical confirmation rescan for txid=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92
+2023-02-17 11:36:11.788 [DBG] NTFN: Confirmation details for txid=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92 not found during historical dispatch, waiting to dispatch at tip
+2023-02-17 11:36:12.192 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:36:12.403 [INF] LNWL: Marking unconfirmed transaction 7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92 mined in block 470
+2023-02-17 11:36:12.403 [DBG] LNWL: Marked address bcrt1penq7a8a389gvkl9al2m78qyrljfsddhescvk8p3cdefasc743w9qgq33ux used
+2023-02-17 11:36:12.403 [INF] CRTR: Pruning channel graph using block 3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9 (height=470)
+2023-02-17 11:36:12.404 [INF] CHDB: Pruned unconnected node 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 from channel graph
+2023-02-17 11:36:12.404 [INF] CHDB: Pruned 1 unconnected nodes from the channel graph
+2023-02-17 11:36:12.405 [DBG] NTFN: Filtering 2 txns for 1 spend requests at height 470
+2023-02-17 11:36:12.412 [DBG] NTFN: Found spend of outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544: spend_tx=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92, block_height=470
+2023-02-17 11:36:12.434 [DBG] NTFN: Spend request outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544 spent at tip=470
+2023-02-17 11:36:12.449 [DBG] NTFN: Found initial confirmation of txid=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92: height=470, hash=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.444 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=1, num_channels=0
+2023-02-17 11:36:12.454 [INF] CRTR: Block 3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9 (height=470) closed 1 channels
+2023-02-17 11:36:12.514 [INF] NTFN: New block: height=470, sha=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.514 [INF] NTFN: Dispatching 1 confirmation notification for txid=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92
+2023-02-17 11:36:12.514 [DBG] DISC: New block: height=470, hash=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.514 [INF] UTXN: Attempting to graduate height=470: num_kids=0, num_babies=0
+2023-02-17 11:36:12.514 [DBG] SWPR: New block: height=470, sha=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.514 [INF] NTFN: Dispatching confirmed spend notification for outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544 at current height=470: 7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92[0] spending 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0 at height=470
+2023-02-17 11:36:12.514 [DBG] NTFN: Found spend of outpoint=370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0, script=0 c742c6042b6630f3ffc962135f206954489334f2ebeeba67eade09c05905e544: spend_tx=7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92, block_height=470
+2023-02-17 11:36:12.514 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=chainTrigger from state=StateDefault
+2023-02-17 11:36:12.515 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=470) examining active HTLC's
+2023-02-17 11:36:12.515 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=470, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:12.515 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): no actions for chain trigger, terminating
+2023-02-17 11:36:12.515 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): terminating at state=StateDefault
+2023-02-17 11:36:12.514 [INF] PEER: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) is now closed at height 470
+2023-02-17 11:36:12.515 [DBG] CNCT: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): local_commit_type=2, local_commit=(*channeldb.ChannelCommitment)(0x140017b8190)({
+ CommitHeight: (uint64) 2,
+ LocalLogIndex: (uint64) 1,
+ LocalHtlcIndex: (uint64) 1,
+ RemoteLogIndex: (uint64) 1,
+ RemoteHtlcIndex: (uint64) 0,
+ LocalBalance: (lnwire.MilliSatoshi) 16668165000 mSAT,
+ RemoteBalance: (lnwire.MilliSatoshi) 100000000 mSAT,
+ CommitFee: (btcutil.Amount) 0.0000905 BTC,
+ FeePerKw: (btcutil.Amount) 0.000125 BTC,
+ CommitTx: (*wire.MsgTx)(0x14000887440)({
+  Version: (int32) 2,
+  TxIn: ([]*wire.TxIn) (len=1 cap=1) {
+   (*wire.TxIn)(0x140016cf200)({
+    PreviousOutPoint: (wire.OutPoint) 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0,
+    SignatureScript: ([]uint8) {
+    },
+    Witness: (wire.TxWitness) <nil>,
+    Sequence: (uint32) 2163834779
+   })
+  },
+  TxOut: ([]*wire.TxOut) (len=2 cap=2) {
+   (*wire.TxOut)(0x14000887480)({
+    Value: (int64) 100000,
+    PkScript: ([]uint8) (len=22 cap=22) {
+     00000000  00 14 3a 90 21 07 04 65  13 2f 30 d5 d8 8e fb 81  |..:.!..e./0.....|
+     00000010  7b 31 1b 10 81 ef                                 |{1....|
+    }
+   }),
+   (*wire.TxOut)(0x140008874a0)({
+    Value: (int64) 16668165,
+    PkScript: ([]uint8) (len=34 cap=34) {
+     00000000  00 20 3d b9 97 f5 f4 87  e0 ee 5f 01 20 ab f7 91  |. =......._. ...|
+     00000010  e1 b0 4e e9 f0 fd 21 45  1d e3 4b d3 ca c1 ee d1  |..N...!E..K.....|
+     00000020  38 89                                             |8.|
+    }
+   })
+  },
+  LockTime: (uint32) 540063881
+ }),
+ CommitSig: ([]uint8) (len=71 cap=71) {
+  00000000  30 45 02 21 00 97 05 16  af ca 02 dc 61 5b fb f2  |0E.!........a[..|
+  00000010  da ca d5 a5 72 83 96 cb  49 de 0f c8 71 15 e0 ad  |....r...I...q...|
+  00000020  d1 8a ad f2 23 02 20 7c  52 4d 26 e2 de 58 02 c6  |....#. |RM&..X..|
+  00000030  f8 af ed f6 2e 09 20 95  3a 82 fb 2d 94 79 8a f8  |...... .:..-.y..|
+  00000040  33 41 6a db 0e 09 9d                              |3Aj....|
+ },
+ Htlcs: ([]channeldb.HTLC) <nil>
+})
+
+2023-02-17 11:36:12.515 [INF] RPCS: [closechannel] close completed: txid(7dcad6bc2d1106a67dde7578213fc6c26e38f4cbaa2beb0219763f2328626e92)
+2023-02-17 11:36:12.515 [DBG] CNCT: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): remote_commit_type=2, remote_commit=(*channeldb.ChannelCommitment)(0x140017b8210)({
+ CommitHeight: (uint64) 2,
+ LocalLogIndex: (uint64) 1,
+ LocalHtlcIndex: (uint64) 1,
+ RemoteLogIndex: (uint64) 1,
+ RemoteHtlcIndex: (uint64) 0,
+ LocalBalance: (lnwire.MilliSatoshi) 16668165000 mSAT,
+ RemoteBalance: (lnwire.MilliSatoshi) 100000000 mSAT,
+ CommitFee: (btcutil.Amount) 0.0000905 BTC,
+ FeePerKw: (btcutil.Amount) 0.000125 BTC,
+ CommitTx: (*wire.MsgTx)(0x140008874c0)({
+  Version: (int32) 2,
+  TxIn: ([]*wire.TxIn) (len=1 cap=1) {
+   (*wire.TxIn)(0x140016cf260)({
+    PreviousOutPoint: (wire.OutPoint) 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0,
+    SignatureScript: ([]uint8) {
+    },
+    Witness: (wire.TxWitness) <nil>,
+    Sequence: (uint32) 2163834779
+   })
+  },
+  TxOut: ([]*wire.TxOut) (len=2 cap=2) {
+   (*wire.TxOut)(0x14000887500)({
+    Value: (int64) 100000,
+    PkScript: ([]uint8) (len=34 cap=34) {
+     00000000  00 20 0a a9 c4 14 8d ac  92 54 17 3b 54 15 43 22  |. .......T.;T.C"|
+     00000010  92 61 a5 d4 ab 3e 4c 7a  de dc 06 85 ff 6f 5e ec  |.a...>Lz.....o^.|
+     00000020  57 05                                             |W.|
+    }
+   }),
+   (*wire.TxOut)(0x14000887520)({
+    Value: (int64) 16668165,
+    PkScript: ([]uint8) (len=22 cap=22) {
+     00000000  00 14 17 20 6a 6a 96 98  33 1b 07 78 0e 00 e1 07  |... jj..3..x....|
+     00000010  81 8a 74 5e 91 4a                                 |..t^.J|
+    }
+   })
+  },
+  LockTime: (uint32) 540063881
+ }),
+ CommitSig: ([]uint8) {
+ },
+ Htlcs: ([]channeldb.HTLC) <nil>
+})
+
+2023-02-17 11:36:12.515 [INF] CNCT: Cooperative closure for ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): (*wire.MsgTx)(0x140007a3c40)({
+ Version: (int32) 2,
+ TxIn: ([]*wire.TxIn) (len=1 cap=1) {
+  (*wire.TxIn)(0x1400172b4a0)({
+   PreviousOutPoint: (wire.OutPoint) 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0,
+   SignatureScript: ([]uint8) {
+   },
+   Witness: (wire.TxWitness) (len=4 cap=4) {
+    ([]uint8) {
+    },
+    ([]uint8) (len=71 cap=71) {
+     00000000  30 44 02 20 20 8b 06 b2  6a 83 bc 45 da 77 ec 5f  |0D.  ...j..E.w._|
+     00000010  9b 34 d7 d1 03 84 d2 a6  fa 84 de 79 57 e9 03 a7  |.4.........yW...|
+     00000020  98 6a 7e 8a 02 20 13 ae  eb 73 85 8e e5 66 5b 5d  |.j~.. ...s...f[]|
+     00000030  a4 18 18 23 c1 1a 81 af  9e 3e 9b 2f a7 64 fa c3  |...#.....>./.d..|
+     00000040  a4 87 90 6f 81 6d 01                              |...o.m.|
+    },
+    ([]uint8) (len=71 cap=71) {
+     00000000  30 44 02 20 5c 62 ec a0  ff c4 08 64 8f 5c d3 ce  |0D. \b.....d.\..|
+     00000010  6d 35 3b ef bf 45 65 16  70 23 7e 3b 9e 3e 6e 98  |m5;..Ee.p#~;.>n.|
+     00000020  35 17 7a 29 02 20 7f 29  6d f2 cf 96 88 60 ad 25  |5.z). .)m....`.%|
+     00000030  0e f9 56 10 92 26 e4 9c  0f 60 c6 df 5d 29 e6 b9  |..V..&...`..])..|
+     00000040  50 22 aa fb 5a cf 01                              |P"..Z..|
+    },
+    ([]uint8) (len=71 cap=71) {
+     00000000  52 21 02 07 56 b4 ca 23  f3 e0 04 4e 0a db c9 6f  |R!..V..#...N...o|
+     00000010  00 b4 da f1 bb 75 e0 81  05 57 74 e7 5e 0d ed a7  |.....u...Wt.^...|
+     00000020  13 a7 7a 21 03 86 1e 03  c5 ae 1e dd 24 d8 77 cd  |..z!........$.w.|
+     00000030  10 cb e1 10 46 94 36 03  1f 16 e9 e1 c7 5f d7 d7  |....F.6......_..|
+     00000040  5f 45 d1 dd da 52 ae                              |_E...R.|
+    }
+   },
+   Sequence: (uint32) 4294967295
+  })
+ },
+ TxOut: ([]*wire.TxOut) (len=2 cap=2) {
+  (*wire.TxOut)(0x140007a3c80)({
+   Value: (int64) 100000,
+   PkScript: ([]uint8) (len=34 cap=34) {
+    00000000  51 20 17 c2 f6 d0 0c 93  6b 64 cd 1c 5b 6c e1 b1  |Q ......kd..[l..|
+    00000010  37 0b 0a 4d 59 fa 62 86  04 60 b9 18 82 3f 7d bc  |7..MY.b..`...?}.|
+    00000020  be 3b                                             |.;|
+   }
+  }),
+  (*wire.TxOut)(0x140007a3ca0)({
+   Value: (int64) 16667565,
+   PkScript: ([]uint8) (len=34 cap=34) {
+    00000000  51 20 cc c1 ee 9f b1 39  50 cb 7c bd fa b7 e3 80  |Q .....9P.|.....|
+    00000010  83 fc 93 06 b6 f9 86 19  63 86 38 6e 53 d8 63 d5  |........c.8nS.c.|
+    00000020  8b 8a                                             |..|
+   }
+  })
+ },
+ LockTime: (uint32) 0
+})
+
+2023-02-17 11:36:12.516 [INF] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) marking channel cooperatively closed
+2023-02-17 11:36:12.537 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=coopCloseTrigger from state=StateDefault
+2023-02-17 11:36:12.538 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): new block (height=470) examining active HTLC's
+2023-02-17 11:36:12.537 [DBG] CHBU: Removing channel 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0 from backup state
+2023-02-17 11:36:12.538 [INF] CHBU: Updating on-disk multi SCB backup: num_old_chans=1, num_new_chans=0
+2023-02-17 11:36:12.538 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): checking commit chain actions at height=470, in_htlc_count=0, out_htlc_count=0
+2023-02-17 11:36:12.569 [DBG] CNCT: ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0): attempting state step with trigger=coopCloseTrigger from state=StateFullyResolved
+2023-02-17 11:36:12.570 [INF] CNCT: ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) has been fully resolved on-chain at height=470
+2023-02-17 11:36:12.575 [INF] CNCT: Marking ChannelPoint(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0) fully resolved
+2023-02-17 11:36:12.574 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:12.591 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:12.596 [INF] CHDB: Pruning link node 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 with zero open channels from database
+2023-02-17 11:36:12.597 [DBG] CHBU: Removing channel 370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0 from backup state
+2023-02-17 11:36:12.597 [INF] CHBU: Updating on-disk multi SCB backup: num_old_chans=0, num_new_chans=0
+2023-02-17 11:36:12.616 [DBG] CNCT: Stopping ChannelArbitrator(370c851407e30b5c12c00a1d2adbe47d8814b69ab93d72dc73d5048b69706897:0)
+2023-02-17 11:36:12.652 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:12.677 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node1640810848/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:13.538 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:36:13.746 [DBG] RPCS: [walletbalance] Total balance=0.99900056 BTC (confirmed=0.99900056 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:13.952 [DBG] RPCS: [walletbalance] Total balance=0.99900056 BTC (confirmed=0.99900056 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:13.955 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): unable to read message from peer: EOF
+2023-02-17 11:36:13.955 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): disconnecting 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561, reason: read handler closed
+2023-02-17 11:36:13.955 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2023-02-17 11:36:14.157 [DBG] SRVR: Peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561 has been disconnected
+2023-02-17 11:36:14.157 [DBG] FNDG: Cancelling all reservations for peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:14.157 [DBG] FNDG: No active reservations for node: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:14.157 [INF] DISC: Removing GossipSyncer for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:14.157 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561 is offline
+2023-02-17 11:36:14.157 [DBG] SRVR: removing peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:5561
+2023-02-17 11:36:14.157 [DBG] PRNF: PeerNotifier notifying peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 offline
+2023-02-17 11:36:14.157 [ERR] SRVR: Unable to retrieve advertised address for node 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48: unable to find node
+2023-02-17 11:36:14.157 [DBG] SRVR: Scheduling connection re-establishment to persistent peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 in 1s
+2023-02-17 11:36:14.157 [DBG] DISC: Stopping GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:36:14.157 [DBG] DISC: Requesting online notification for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:36:14.158 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) stopped
+2023-02-17 11:36:14.821 [INF] LTND: Received shutdown request.
+2023-02-17 11:36:14.821 [INF] LTND: Shutting down...
+2023-02-17 11:36:14.821 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:36:14.822 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:36:14.822 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:36:14.822 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:36:14.824 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:36:14.824 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:36:14.824 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:36:14.824 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:36:14.824 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:36:14.824 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:36:14.824 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:36:14.824 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:36:14.824 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:36:14.824 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:36:14.824 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:36:14.824 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:36:14.825 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:36:14.825 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:36:14.825 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:36:14.825 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:36:14.825 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:36:14.825 [DBG] DISC: SyncManager stopped
+2023-02-17 11:36:14.825 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:36:14.825 [DBG] DISC: reliableSender stopped
+2023-02-17 11:36:14.825 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:36:14.825 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:36:14.825 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:36:14.825 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:36:14.825 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:36:14.825 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:36:14.825 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:36:14.825 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:36:14.825 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:36:14.826 [INF] CHFT: Stopping event store
+2023-02-17 11:36:14.826 [DBG] CHFT: recording flap count for: 1 peers
+2023-02-17 11:36:14.826 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:36:14.836 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:36:14.836 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:36:14.837 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:36:14.839 [INF] LTND: Shutdown complete
+

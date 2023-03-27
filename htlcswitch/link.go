@@ -3282,6 +3282,8 @@ func (l *channelLink) processExitHop(pd *lnwallet.PaymentDescriptor,
 		HtlcID: pd.HtlcIndex,
 	}
 
+	l.log.Info("before NotifyExitHopHtlc")
+
 	event, err := l.cfg.Registry.NotifyExitHopHtlc(
 		invoiceHash, pd.Amount, pd.Timeout, int32(heightNow),
 		circuitKey, l.hodlQueue.ChanIn(), payload,
@@ -3290,6 +3292,7 @@ func (l *channelLink) processExitHop(pd *lnwallet.PaymentDescriptor,
 		return err
 	}
 
+	l.log.Info("after NotifyExitHopHtlc")
 	// Create a hodlHtlc struct and decide either resolved now or later.
 	htlc := hodlHtlc{
 		pd:         pd,
@@ -3302,6 +3305,7 @@ func (l *channelLink) processExitHop(pd *lnwallet.PaymentDescriptor,
 		l.hodlMap[circuitKey] = htlc
 		return nil
 	}
+	panic("YO")
 
 	// Process the received resolution.
 	return l.processHtlcResolution(event, htlc)

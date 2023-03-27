@@ -1,0 +1,1645 @@
+2023-02-17 11:35:05.194 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/lnd.conf: no such file or directory
+2023-02-17 11:35:05.195 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:35:05.195 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:35:05.195 [INF] LTND: Pprof listening on 127.0.0.1:5568
+2023-02-17 11:35:05.195 [INF] RPCS: Generating TLS certificates...
+2023-02-17 11:35:05.196 [INF] RPCS: Done generating TLS certificates
+2023-02-17 11:35:05.197 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.197 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.197 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.197 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:35:05.197 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.197 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.197 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:35:05.197 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:35:05.198 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.198 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:35:05.198 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:35:05.198 [INF] RPCS: RPC server listening on 127.0.0.1:5566
+2023-02-17 11:35:05.198 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:35:05.198 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:35:05.198 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:35:05.198 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:35:05.198 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:35:05.198 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:35:05.198 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:35:05.199 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:35:05.199 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:35:05.200 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:35:05.200 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:35:05.200 [INF] RPCS: gRPC proxy started at 127.0.0.1:5567
+2023-02-17 11:35:05.200 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:35:05.200 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:35:05.215 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:35:05.237 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:35:05.237 [DBG] CHDB: Finished populating in-memory channel graph (took 104.208µs, num_node_features=0, num_nodes=0, num_channels=0)
+2023-02-17 11:35:05.237 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:35:05.237 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:35:05.237 [INF] LTND: Database(s) now open (time_to_open=37.479792ms)!
+2023-02-17 11:35:05.298 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:35:05.349 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:35:05.384 [INF] LNWL: Opened wallet
+2023-02-17 11:35:05.387 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:35:05.456 [INF] CHRE: LightningWallet opened
+2023-02-17 11:35:05.456 [DBG] LNWL: Locating suitable block for birthday 2023-02-15 11:35:05 +0100 CET between blocks 0-438
+2023-02-17 11:35:05.456 [DBG] LNWL: Checking candidate block: height=219, hash=6531bb08de109439a10bee9a7792f897db05ebee736db6ada603371cebbbb7de, timestamp=2023-02-17 11:35:40 +0100 CET
+2023-02-17 11:35:05.457 [DBG] LNWL: Checking candidate block: height=109, hash=3baf142b63890c5b48f319d0c02aa5da9f0ff2e1e41ab85c0bdc7c94ca71eda7, timestamp=2023-02-17 11:35:21 +0100 CET
+2023-02-17 11:35:05.457 [DBG] LNWL: Checking candidate block: height=54, hash=17fa8857a705bc11bb32e3054df2b8c1aed25bbcbf6a1db1bb9c4f1605bb7ae2, timestamp=2023-02-17 11:35:12 +0100 CET
+2023-02-17 11:35:05.457 [DBG] LNWL: Checking candidate block: height=27, hash=447b3d40dba43d5340a6558b6581894475fec38b528ed6e42f5d7d94a8f8ec2a, timestamp=2023-02-17 11:35:08 +0100 CET
+2023-02-17 11:35:05.458 [DBG] LNWL: Checking candidate block: height=13, hash=1c0bfd9ba0673d3602807081bbac460643124cf9c1d7ae46ebcb9ebc5fd17542, timestamp=2023-02-17 11:35:05 +0100 CET
+2023-02-17 11:35:05.458 [DBG] LNWL: Checking candidate block: height=6, hash=0233c107291d11d8497954969ad24a7fe5f6e7dd2dac0426abaefdf111aafaff, timestamp=2023-02-17 11:35:04 +0100 CET
+2023-02-17 11:35:05.458 [DBG] LNWL: Checking candidate block: height=3, hash=3cdc129a786a72f5b6b87290ef4df352ea8fbfc1034e7ee0002e1ae8202898d1, timestamp=2023-02-17 11:35:03 +0100 CET
+2023-02-17 11:35:05.458 [DBG] LNWL: Checking candidate block: height=1, hash=7128bb5744e350ecad9e6f30f19624fe37bfa01d031c39947d635bcb578eb32f, timestamp=2023-02-17 11:35:02 +0100 CET
+2023-02-17 11:35:05.459 [DBG] LNWL: Checking candidate block: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, timestamp=2011-02-03 00:16:42 +0100 CET
+2023-02-17 11:35:05.459 [DBG] LNWL: Found birthday block: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, timestamp=2011-02-03 00:16:42 +0100 CET
+2023-02-17 11:35:05.503 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:35:05.503 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:35:05.503 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:35:05.503 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:35:05.517 [INF] LNWL: Started rescan from block 0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 (height 0) for 0 addresses
+2023-02-17 11:35:05.522 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:35:05.522 [INF] LNWL: Catching up block hashes to height 438, this might take a while
+2023-02-17 11:35:05.542 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:35:05.550 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:35:05.551 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=10.75µs
+2023-02-17 11:35:05.551 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:35:05.561 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:35:05.561 [INF] SWPR: Migrating UTXO nursery finalized TXIDs
+2023-02-17 11:35:05.569 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:35:05.570 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:05.570 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:35:05.570 [INF] RRPC: Making macaroons for Router RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/router.macaroon
+2023-02-17 11:35:05.580 [INF] IRPC: Baking macaroons for invoices RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/invoices.macaroon
+2023-02-17 11:35:05.590 [INF] NTFR: Baking macaroons for ChainNotifier RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/chainnotifier.macaroon
+2023-02-17 11:35:05.601 [INF] SGNR: Making macaroons for Signer RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/signer.macaroon
+2023-02-17 11:35:05.611 [INF] WLKT: Baking macaroons for WalletKit RPC Server at: /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/walletkit.macaroon
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:35:05.623 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:35:05.623 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:35:05.624 [INF] LTND: Waiting for chain backend to finish sync, start_height=438
+2023-02-17 11:35:05.707 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:35:05.707 [INF] LNWL: Finished rescan for 0 addresses (synced to block 41f8baeb25f2e9533bc7bf9759cb9d1e56c1e65113a2858ab4f322b185cc3cbc, height 438)
+2023-02-17 11:35:06.627 [INF] LTND: Chain backend is fully synced (end_height=438)!
+2023-02-17 11:35:06.627 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:35:06.627 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:35:06.627 [INF] LNWL: SigPool starting
+2023-02-17 11:35:06.627 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:35:06.648 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:35:06.648 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:35:06.648 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:35:06.648 [INF] SWPR: Sweeper starting
+2023-02-17 11:35:06.648 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:35:06.648 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.648 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.648 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:35:06.648 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:35:06.648 [INF] FNDG: Funding manager starting
+2023-02-17 11:35:06.648 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:35:06.648 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:35:06.649 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.649 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:35:06.649 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.649 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.649 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:35:06.649 [DBG] HSWC: InterceptableSwitch running: height=438, requireInterceptor=false
+2023-02-17 11:35:06.649 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.650 [INF] CRTR: Channel Router starting
+2023-02-17 11:35:06.650 [DBG] DISC: New block: height=438, hash=41f8baeb25f2e9533bc7bf9759cb9d1e56c1e65113a2858ab4f322b185cc3cbc
+2023-02-17 11:35:06.661 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:35:06.661 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:35:06.675 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:35:06.675 [INF] CRTR: Prune tip for Channel Graph: height=438, hash=41f8baeb25f2e9533bc7bf9759cb9d1e56c1e65113a2858ab4f322b185cc3cbc
+2023-02-17 11:35:06.686 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:35:06.696 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:35:06.696 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.696 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:35:06.696 [INF] HSWC: Onion processor starting
+2023-02-17 11:35:06.707 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:35:06.707 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.707 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:35:06.707 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:35:06.707 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:35:06.723 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:06.733 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:06.739 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:35:06.739 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:35:06.739 [INF] BTCN: Server listening on 127.0.0.1:5565
+2023-02-17 11:35:06.739 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:35:06.739 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:35:06.744 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:35:06.767 [INF] SRVR: New inbound connection from 127.0.0.1:61528
+2023-02-17 11:35:06.767 [INF] SRVR: Finalizing connection to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528, inbound=true
+2023-02-17 11:35:06.767 [DBG] PRNF: PeerNotifier notifying peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 online
+2023-02-17 11:35:06.767 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending Init to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.767 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received Init from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.767 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Loaded 0 active channels from database
+2023-02-17 11:35:06.767 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528 is online
+2023-02-17 11:35:06.767 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Negotiated chan series queries
+2023-02-17 11:35:06.767 [INF] DISC: Creating new GossipSyncer for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:06.767 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:06.767 [DBG] DISC: Created new GossipSyncer[state=chansSynced type=PassiveSync] for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.767 [DBG] DISC: Starting GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:35:06.768 [DBG] DISC: Attempting initial historical sync with GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:35:06.768 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=PassiveSync
+2023-02-17 11:35:06.768 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=syncingChans, type=PassiveSync
+2023-02-17 11:35:06.768 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): requesting new chans from height=0 and 438 blocks after
+2023-02-17 11:35:06.768 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=waitingQueryRangeReply, type=PassiveSync
+2023-02-17 11:35:06.768 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending QueryChannelRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, start_height=0, end_height=437) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.768 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received QueryChannelRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, start_height=0, end_height=437) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.768 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): filtering chan range: start_height=0, num_blocks=438
+2023-02-17 11:35:06.768 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): sending final chan range chunk, size=0
+2023-02-17 11:35:06.768 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ReplyChannelRange(start_height=0, end_height=437, num_chans=0, encoding=0) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.768 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ReplyChannelRange(start_height=0, end_height=437, num_chans=0, encoding=0) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.768 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): buffering chan range reply of size=0
+2023-02-17 11:35:06.768 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): filtering through 0 chans
+2023-02-17 11:35:06.768 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): remote peer has no new chans
+2023-02-17 11:35:06.768 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=PassiveSync
+2023-02-17 11:35:06.768 [DBG] DISC: Initial historical sync completed
+2023-02-17 11:35:06.768 [DBG] DISC: Attempting to transition 1 passive GossipSyncers to active
+2023-02-17 11:35:06.768 [DBG] DISC: Transitioning passive GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) to active
+2023-02-17 11:35:06.769 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): transitioning from PassiveSync to ActiveSync
+2023-02-17 11:35:06.769 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): applying gossipFilter(start=2023-02-17 11:35:06.76906 +0100 CET m=+1.603529834, end=2159-03-26 19:03:21.76906 +0200 CEST)
+2023-02-17 11:35:06.769 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=ActiveSync
+2023-02-17 11:35:06.769 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending GossipTimestampRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, first_stamp=2023-02-17 11:35:06 +0100 CET, stamp_range=4294967295) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.769 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received GossipTimestampRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, first_stamp=2023-02-17 11:35:06 +0100 CET, stamp_range=4294967295) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:06.769 [DBG] CHDB: ChanUpdatesInHorizon hit percentage: NaN (0/0)
+2023-02-17 11:35:06.769 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): applying new update horizon: start=2023-02-17 11:35:06 +0100 CET, end=2159-03-26 19:03:21 +0200 CEST, backlog_size=0
+2023-02-17 11:35:07.258 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qch5ssf46s3ad6jcx3uhklf5ynqvqgddjneychc
+2023-02-17 11:35:07.273 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1q0gx0ugvhycsfgz4c5ezkr33yeew208mnq2vwsv
+2023-02-17 11:35:07.275 [INF] LNWL: Inserting unconfirmed transaction bb8ed20ffb1266316b7994f8a3de6a99a23ba02861b55b23e50810b3d943440d
+2023-02-17 11:35:07.275 [DBG] LNWL: Marked address bcrt1qch5ssf46s3ad6jcx3uhklf5ynqvqgddjneychc used
+2023-02-17 11:35:07.316 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qyqyg0d6kqlpzk8pepq8rgj6y07hdurzzatxn5s
+2023-02-17 11:35:07.337 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qv9uml4m253zrtahaqsp6n2qgeencvrhqppuaqq
+2023-02-17 11:35:07.355 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qmcnj8ce3eqzgvukynm09urng53myzuztys7clq
+2023-02-17 11:35:07.375 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qcpkvmz5657rpx7kdrh8k8ckq6yyj5uj63zyjd0
+2023-02-17 11:35:07.377 [INF] LNWL: Inserting unconfirmed transaction f8a6046f86a23cfbb65856b50fc9a4683fd62a0ace04ae8784b8e75b0b5909f3
+2023-02-17 11:35:07.377 [DBG] LNWL: Marked address bcrt1q0gx0ugvhycsfgz4c5ezkr33yeew208mnq2vwsv used
+2023-02-17 11:35:07.387 [INF] LNWL: Inserting unconfirmed transaction 82966f084cb1fd40581c2051aca4e59b6ec97fcf5da2a9c590827c6c47a03e74
+2023-02-17 11:35:07.387 [DBG] LNWL: Marked address bcrt1qyqyg0d6kqlpzk8pepq8rgj6y07hdurzzatxn5s used
+2023-02-17 11:35:07.414 [INF] LNWL: Inserting unconfirmed transaction 0dd7fdbfff13342d69be6f623e79426f6e88f3c844923ba03af78997c74c408b
+2023-02-17 11:35:07.414 [DBG] LNWL: Marked address bcrt1qv9uml4m253zrtahaqsp6n2qgeencvrhqppuaqq used
+2023-02-17 11:35:07.414 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qx528dkd6kahszt8fad47f2h7r5hnugwlp73aj6
+2023-02-17 11:35:07.425 [INF] LNWL: Inserting unconfirmed transaction 414f422384d5ae2d0d3b2804d538d15a1147ba615956ec7c6a8c26631a3e7a15
+2023-02-17 11:35:07.425 [DBG] LNWL: Marked address bcrt1qmcnj8ce3eqzgvukynm09urng53myzuztys7clq used
+2023-02-17 11:35:07.450 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qpjaegsplzm7vkhxjkk9gdxqd8w5kwvkhzmhmq7
+2023-02-17 11:35:07.469 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qwmmzavdgfd5qtmxvm9asvenfe83dxqnpt4x69z
+2023-02-17 11:35:07.486 [INF] LNWL: Inserting unconfirmed transaction caa3edda5d1d28322ba329aac9746e6152afedd92af372abbb6faa633bd2df09
+2023-02-17 11:35:07.486 [DBG] LNWL: Marked address bcrt1qcpkvmz5657rpx7kdrh8k8ckq6yyj5uj63zyjd0 used
+2023-02-17 11:35:07.487 [DBG] RPCS: [newaddress] account=default type=WITNESS_PUBKEY_HASH addr=bcrt1qj7rr8r8f7rhrlcjuj2srvlj28p9j9j3kd7hq8v
+2023-02-17 11:35:07.498 [INF] LNWL: Inserting unconfirmed transaction b994a3d631d3556ae71538e492f6d97e91d2f0f3a8d8f78a037e07b475e5aff5
+2023-02-17 11:35:07.498 [DBG] LNWL: Marked address bcrt1qx528dkd6kahszt8fad47f2h7r5hnugwlp73aj6 used
+2023-02-17 11:35:07.516 [INF] LNWL: Inserting unconfirmed transaction 39b3ca9e99b2b92dd560d7fc6fedfecc7270835470b046ce3ee4fefd91539ef0
+2023-02-17 11:35:07.516 [DBG] LNWL: Marked address bcrt1qpjaegsplzm7vkhxjkk9gdxqd8w5kwvkhzmhmq7 used
+2023-02-17 11:35:07.574 [INF] LNWL: Inserting unconfirmed transaction b518ea0bdd7fc9b148c1ea8f8c76c5cfd31bc403982bd790aaa3f5dffc7052e1
+2023-02-17 11:35:07.574 [DBG] LNWL: Marked address bcrt1qwmmzavdgfd5qtmxvm9asvenfe83dxqnpt4x69z used
+2023-02-17 11:35:07.586 [INF] LNWL: Inserting unconfirmed transaction ef8087fd429e3c9e50ae5dea8e5b78b6a3c9e14d1bc597144f40e677fff15dc6
+2023-02-17 11:35:07.586 [DBG] LNWL: Marked address bcrt1qj7rr8r8f7rhrlcjuj2srvlj28p9j9j3kd7hq8v used
+2023-02-17 11:35:07.737 [INF] LNWL: Marking unconfirmed transaction caa3edda5d1d28322ba329aac9746e6152afedd92af372abbb6faa633bd2df09 mined in block 439
+2023-02-17 11:35:07.739 [DBG] LNWL: Marked address bcrt1qcpkvmz5657rpx7kdrh8k8ckq6yyj5uj63zyjd0 used
+2023-02-17 11:35:07.740 [INF] CRTR: Pruning channel graph using block 161dd910aaa03489f2e2bc47ce3ea760729dda8b1cda473d80c423c4e84bb820 (height=439)
+2023-02-17 11:35:07.751 [DBG] NTFN: Filtering 21 txns for 0 spend requests at height 439
+2023-02-17 11:35:07.760 [INF] LNWL: Marking unconfirmed transaction 0dd7fdbfff13342d69be6f623e79426f6e88f3c844923ba03af78997c74c408b mined in block 439
+2023-02-17 11:35:07.765 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:35:07.765 [INF] CRTR: Block 161dd910aaa03489f2e2bc47ce3ea760729dda8b1cda473d80c423c4e84bb820 (height=439) closed 0 channels
+2023-02-17 11:35:07.761 [INF] NTFN: New block: height=439, sha=161dd910aaa03489f2e2bc47ce3ea760729dda8b1cda473d80c423c4e84bb820
+2023-02-17 11:35:07.766 [DBG] SWPR: New block: height=439, sha=161dd910aaa03489f2e2bc47ce3ea760729dda8b1cda473d80c423c4e84bb820
+2023-02-17 11:35:07.766 [INF] UTXN: Attempting to graduate height=439: num_kids=0, num_babies=0
+2023-02-17 11:35:07.766 [DBG] DISC: New block: height=439, hash=161dd910aaa03489f2e2bc47ce3ea760729dda8b1cda473d80c423c4e84bb820
+2023-02-17 11:35:07.767 [DBG] LNWL: Marked address bcrt1qv9uml4m253zrtahaqsp6n2qgeencvrhqppuaqq used
+2023-02-17 11:35:07.786 [INF] LNWL: Marking unconfirmed transaction ef8087fd429e3c9e50ae5dea8e5b78b6a3c9e14d1bc597144f40e677fff15dc6 mined in block 439
+2023-02-17 11:35:07.789 [DBG] LNWL: Marked address bcrt1qj7rr8r8f7rhrlcjuj2srvlj28p9j9j3kd7hq8v used
+2023-02-17 11:35:07.821 [INF] LNWL: Marking unconfirmed transaction f8a6046f86a23cfbb65856b50fc9a4683fd62a0ace04ae8784b8e75b0b5909f3 mined in block 439
+2023-02-17 11:35:07.823 [DBG] LNWL: Marked address bcrt1q0gx0ugvhycsfgz4c5ezkr33yeew208mnq2vwsv used
+2023-02-17 11:35:07.835 [INF] LNWL: Marking unconfirmed transaction b994a3d631d3556ae71538e492f6d97e91d2f0f3a8d8f78a037e07b475e5aff5 mined in block 439
+2023-02-17 11:35:07.837 [DBG] LNWL: Marked address bcrt1qx528dkd6kahszt8fad47f2h7r5hnugwlp73aj6 used
+2023-02-17 11:35:07.857 [INF] LNWL: Marking unconfirmed transaction 39b3ca9e99b2b92dd560d7fc6fedfecc7270835470b046ce3ee4fefd91539ef0 mined in block 439
+2023-02-17 11:35:07.861 [DBG] LNWL: Marked address bcrt1qpjaegsplzm7vkhxjkk9gdxqd8w5kwvkhzmhmq7 used
+2023-02-17 11:35:07.879 [INF] LNWL: Marking unconfirmed transaction b518ea0bdd7fc9b148c1ea8f8c76c5cfd31bc403982bd790aaa3f5dffc7052e1 mined in block 439
+2023-02-17 11:35:07.880 [DBG] LNWL: Marked address bcrt1qwmmzavdgfd5qtmxvm9asvenfe83dxqnpt4x69z used
+2023-02-17 11:35:07.883 [INF] CRTR: Pruning channel graph using block 601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08 (height=440)
+2023-02-17 11:35:07.903 [INF] LNWL: Marking unconfirmed transaction bb8ed20ffb1266316b7994f8a3de6a99a23ba02861b55b23e50810b3d943440d mined in block 439
+2023-02-17 11:35:07.908 [DBG] CHDB: Pruned graph, cache now has num_node_features=0, num_nodes=0, num_channels=0
+2023-02-17 11:35:07.912 [INF] CRTR: Block 601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08 (height=440) closed 0 channels
+2023-02-17 11:35:07.910 [DBG] LNWL: Marked address bcrt1qch5ssf46s3ad6jcx3uhklf5ynqvqgddjneychc used
+2023-02-17 11:35:07.919 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 440
+2023-02-17 11:35:07.922 [INF] NTFN: New block: height=440, sha=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:07.923 [INF] UTXN: Attempting to graduate height=440: num_kids=0, num_babies=0
+2023-02-17 11:35:07.923 [DBG] DISC: New block: height=440, hash=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:07.923 [DBG] SWPR: New block: height=440, sha=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:07.945 [INF] LNWL: Marking unconfirmed transaction 82966f084cb1fd40581c2051aca4e59b6ec97fcf5da2a9c590827c6c47a03e74 mined in block 439
+2023-02-17 11:35:07.947 [DBG] LNWL: Marked address bcrt1qyqyg0d6kqlpzk8pepq8rgj6y07hdurzzatxn5s used
+2023-02-17 11:35:07.972 [INF] LNWL: Marking unconfirmed transaction 414f422384d5ae2d0d3b2804d538d15a1147ba615956ec7c6a8c26631a3e7a15 mined in block 439
+2023-02-17 11:35:07.974 [DBG] LNWL: Marked address bcrt1qmcnj8ce3eqzgvukynm09urng53myzuztys7clq used
+2023-02-17 11:35:09.751 [DBG] RPCS: [walletbalance] Total balance=100 BTC (confirmed=100 BTC, unconfirmed=0 BTC)
+2023-02-17 11:35:09.966 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): unable to read message from peer: EOF
+2023-02-17 11:35:09.967 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): disconnecting 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528, reason: read handler closed
+2023-02-17 11:35:09.967 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2023-02-17 11:35:10.074 [DBG] SRVR: Peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528 has been disconnected
+2023-02-17 11:35:10.077 [DBG] FNDG: Cancelling all reservations for peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:10.077 [DBG] FNDG: No active reservations for node: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:10.077 [INF] DISC: Removing GossipSyncer for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:10.078 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528 is offline
+2023-02-17 11:35:10.078 [DBG] SRVR: removing peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61528
+2023-02-17 11:35:10.078 [DBG] PRNF: PeerNotifier notifying peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 offline
+2023-02-17 11:35:10.078 [DBG] DISC: Stopping GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:35:10.078 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) stopped
+2023-02-17 11:35:11.321 [INF] LTND: Received shutdown request.
+2023-02-17 11:35:11.321 [INF] LTND: Shutting down...
+2023-02-17 11:35:11.321 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:35:11.321 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:35:11.321 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:35:11.321 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:35:11.321 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:35:11.322 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:35:11.322 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:35:11.322 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:35:11.322 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:35:11.322 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:35:11.322 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:35:11.322 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:35:11.322 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:35:11.322 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:35:11.322 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:35:11.322 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:35:11.322 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:35:11.322 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:35:11.322 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:35:11.322 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:35:11.322 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:35:11.323 [DBG] DISC: SyncManager stopped
+2023-02-17 11:35:11.323 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:35:11.323 [DBG] DISC: reliableSender stopped
+2023-02-17 11:35:11.323 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:35:11.323 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:35:11.323 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:35:11.323 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:35:11.323 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:35:11.323 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:35:11.323 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:35:11.323 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:35:11.323 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:35:11.323 [INF] CHFT: Stopping event store
+2023-02-17 11:35:11.323 [DBG] CHFT: recording flap count for: 1 peers
+2023-02-17 11:35:11.323 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:35:11.334 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:35:11.334 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:35:11.334 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:35:11.335 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:35:11.335 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:35:11.335 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:35:11.335 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:35:11.335 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:35:11.335 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:35:11.337 [INF] LTND: Shutdown complete
+
+2023-02-17 11:35:11.397 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/lnd.conf: no such file or directory
+2023-02-17 11:35:11.398 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:35:11.398 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:35:11.398 [INF] LTND: Pprof listening on 127.0.0.1:5568
+2023-02-17 11:35:11.400 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:35:11.400 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:35:11.400 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:35:11.400 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:35:11.400 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:35:11.400 [INF] RPCS: RPC server listening on 127.0.0.1:5566
+2023-02-17 11:35:11.401 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:35:11.401 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:35:11.401 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:35:11.401 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:35:11.401 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:35:11.402 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:35:11.402 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:35:11.402 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:35:11.403 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:35:11.403 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:35:11.403 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:35:11.403 [INF] RPCS: gRPC proxy started at 127.0.0.1:5567
+2023-02-17 11:35:11.403 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:35:11.403 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:35:11.405 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:35:11.421 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:35:11.421 [DBG] CHDB: Finished populating in-memory channel graph (took 77.375µs, num_node_features=1, num_nodes=0, num_channels=0)
+2023-02-17 11:35:11.421 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:35:11.421 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:35:11.421 [INF] LTND: Database(s) now open (time_to_open=18.292125ms)!
+2023-02-17 11:35:11.450 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:35:11.491 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:35:11.503 [INF] LNWL: Opened wallet
+2023-02-17 11:35:11.504 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:35:11.521 [INF] CHRE: LightningWallet opened
+2023-02-17 11:35:11.522 [DBG] LNWL: Birthday block has already been verified: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206
+2023-02-17 11:35:11.558 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:35:11.558 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:35:11.558 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:35:11.558 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:35:11.566 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:35:11.580 [INF] LNWL: Started rescan from block 601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08 (height 440) for 10 addresses
+2023-02-17 11:35:11.586 [INF] LNWL: Catching up block hashes to height 440, this might take a while
+2023-02-17 11:35:11.599 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:35:11.603 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:35:11.603 [INF] LNWL: Finished rescan for 10 addresses (synced to block 601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08, height 440)
+2023-02-17 11:35:11.613 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:35:11.613 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=7.708µs
+2023-02-17 11:35:11.613 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:35:11.623 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:35:11.633 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:35:11.633 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:11.633 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:35:11.634 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:35:11.634 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:35:11.634 [INF] LTND: Waiting for chain backend to finish sync, start_height=440
+2023-02-17 11:35:11.635 [INF] LTND: Chain backend is fully synced (end_height=440)!
+2023-02-17 11:35:11.635 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:35:11.635 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:35:11.635 [INF] LNWL: SigPool starting
+2023-02-17 11:35:11.635 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:35:11.642 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:35:11.642 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:35:11.642 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:35:11.642 [INF] SWPR: Sweeper starting
+2023-02-17 11:35:11.642 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:35:11.642 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.642 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:35:11.642 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:35:11.642 [INF] FNDG: Funding manager starting
+2023-02-17 11:35:11.642 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.642 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:35:11.642 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:35:11.643 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.643 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:35:11.643 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.643 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.643 [DBG] HSWC: InterceptableSwitch running: height=440, requireInterceptor=false
+2023-02-17 11:35:11.643 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:35:11.643 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.643 [INF] CRTR: Channel Router starting
+2023-02-17 11:35:11.643 [DBG] DISC: New block: height=440, hash=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:11.643 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:35:11.650 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:35:11.651 [INF] CRTR: Prune tip for Channel Graph: height=440, hash=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:11.660 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:35:11.670 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:35:11.670 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.670 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:35:11.670 [INF] HSWC: Onion processor starting
+2023-02-17 11:35:11.679 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:35:11.679 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:11.679 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:35:11.679 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:35:11.679 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:35:11.701 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:11.706 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:11.707 [INF] BTCN: Server listening on 127.0.0.1:5565
+2023-02-17 11:35:11.707 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:35:11.707 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:35:11.707 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:35:11.707 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:35:11.757 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:35:11.963 [DBG] RPCS: [listchannels] fetched 0 channels from DB
+2023-02-17 11:35:11.964 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:35:11.966 [DBG] RPCS: [ListPayments]
+2023-02-17 11:35:12.374 [DBG] RPCS: [walletbalance] Total balance=100 BTC (confirmed=100 BTC, unconfirmed=0 BTC)
+itest: STARTING ============ wallet import account ============
+
+2023-02-17 11:35:12.393 [INF] SRVR: New inbound connection from 127.0.0.1:61577
+2023-02-17 11:35:12.393 [INF] SRVR: Finalizing connection to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577, inbound=true
+2023-02-17 11:35:12.393 [DBG] PRNF: PeerNotifier notifying peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 online
+2023-02-17 11:35:12.393 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending Init to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.393 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received Init from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.393 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Loaded 0 active channels from database
+2023-02-17 11:35:12.393 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577 is online
+2023-02-17 11:35:12.393 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Negotiated chan series queries
+2023-02-17 11:35:12.393 [INF] DISC: Creating new GossipSyncer for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:12.393 [DBG] DISC: Created new GossipSyncer[state=chansSynced type=PassiveSync] for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.393 [DBG] DISC: Starting GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:35:12.393 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:12.393 [DBG] DISC: Attempting initial historical sync with GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:35:12.393 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=PassiveSync
+2023-02-17 11:35:12.393 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=syncingChans, type=PassiveSync
+2023-02-17 11:35:12.393 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): requesting new chans from height=0 and 440 blocks after
+2023-02-17 11:35:12.393 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=waitingQueryRangeReply, type=PassiveSync
+2023-02-17 11:35:12.393 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending QueryChannelRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, start_height=0, end_height=439) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.393 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received QueryChannelRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, start_height=0, end_height=439) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.393 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): filtering chan range: start_height=0, num_blocks=440
+2023-02-17 11:35:12.394 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): sending final chan range chunk, size=0
+2023-02-17 11:35:12.394 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending ReplyChannelRange(start_height=0, end_height=439, num_chans=0, encoding=0) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.394 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received ReplyChannelRange(start_height=0, end_height=439, num_chans=0, encoding=0) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.394 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): buffering chan range reply of size=0
+2023-02-17 11:35:12.394 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): filtering through 0 chans
+2023-02-17 11:35:12.394 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): remote peer has no new chans
+2023-02-17 11:35:12.394 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=PassiveSync
+2023-02-17 11:35:12.394 [DBG] DISC: Initial historical sync completed
+2023-02-17 11:35:12.394 [DBG] DISC: Attempting to transition 1 passive GossipSyncers to active
+2023-02-17 11:35:12.394 [DBG] DISC: Transitioning passive GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) to active
+2023-02-17 11:35:12.394 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): transitioning from PassiveSync to ActiveSync
+2023-02-17 11:35:12.394 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): applying gossipFilter(start=2023-02-17 11:35:12.394162 +0100 CET m=+1.026761043, end=2159-03-26 19:03:27.394162 +0200 CEST)
+2023-02-17 11:35:12.394 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): state=chansSynced, type=ActiveSync
+2023-02-17 11:35:12.394 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Sending GossipTimestampRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, first_stamp=2023-02-17 11:35:12 +0100 CET, stamp_range=4294967295) to 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.394 [DBG] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): Received GossipTimestampRange(chain_hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, first_stamp=2023-02-17 11:35:12 +0100 CET, stamp_range=4294967295) from 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:12.394 [DBG] CHDB: ChanUpdatesInHorizon hit percentage: NaN (0/0)
+2023-02-17 11:35:12.394 [INF] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): applying new update horizon: start=2023-02-17 11:35:12 +0100 CET, end=2159-03-26 19:03:27 +0200 CEST, backlog_size=0
+2023-02-17 11:35:12.798 [DBG] RPCS: [listpeers] yielded [022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577] peers
+2023-02-17 11:35:13.016 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): unable to read message from peer: EOF
+2023-02-17 11:35:13.016 [INF] PEER: Peer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48): disconnecting 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577, reason: read handler closed
+2023-02-17 11:35:13.017 [INF] NTFN: Cancelling epoch notification, epoch_id=9
+2023-02-17 11:35:13.117 [DBG] SRVR: Peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577 has been disconnected
+2023-02-17 11:35:13.118 [DBG] FNDG: Cancelling all reservations for peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:13.118 [DBG] FNDG: No active reservations for node: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:13.118 [INF] DISC: Removing GossipSyncer for peer=022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48
+2023-02-17 11:35:13.118 [DBG] SRVR: Notifying that peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577 is offline
+2023-02-17 11:35:13.118 [DBG] SRVR: removing peer 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48@127.0.0.1:61577
+2023-02-17 11:35:13.118 [DBG] PRNF: PeerNotifier notifying peer: 022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48 offline
+2023-02-17 11:35:13.118 [DBG] DISC: Stopping GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48)
+2023-02-17 11:35:13.118 [DBG] DISC: GossipSyncer(022c4915cd73283979d75a8470db15f2e8b9178d549aa1b86ff4c97a10043b3a48) stopped
+2023-02-17 11:35:14.363 [INF] LTND: Received shutdown request.
+2023-02-17 11:35:14.363 [INF] LTND: Shutting down...
+2023-02-17 11:35:14.363 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:35:14.364 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:35:14.364 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:35:14.364 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:35:14.364 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:35:14.364 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:35:14.364 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:35:14.364 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:35:14.364 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:35:14.364 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:35:14.364 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:35:14.364 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:35:14.364 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:35:14.364 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:35:14.364 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:35:14.364 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:35:14.364 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:35:14.365 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:35:14.365 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:35:14.365 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:35:14.365 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:35:14.365 [DBG] DISC: SyncManager stopped
+2023-02-17 11:35:14.365 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:35:14.365 [DBG] DISC: reliableSender stopped
+2023-02-17 11:35:14.365 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:35:14.365 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:35:14.365 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:35:14.365 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:35:14.365 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:35:14.365 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:35:14.365 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:35:14.365 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:35:14.365 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:35:14.365 [INF] CHFT: Stopping event store
+2023-02-17 11:35:14.365 [DBG] CHFT: recording flap count for: 1 peers
+2023-02-17 11:35:14.366 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:35:14.379 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:35:14.379 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:35:14.379 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:35:14.379 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:35:14.379 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:35:14.380 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:35:14.383 [INF] LTND: Shutdown complete
+
+2023-02-17 11:35:14.438 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/lnd.conf: no such file or directory
+2023-02-17 11:35:14.438 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:35:14.438 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:35:14.438 [INF] LTND: Pprof listening on 127.0.0.1:5568
+2023-02-17 11:35:14.440 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:35:14.440 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:35:14.440 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:35:14.440 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:35:14.440 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:35:14.440 [INF] RPCS: RPC server listening on 127.0.0.1:5566
+2023-02-17 11:35:14.441 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:35:14.441 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:35:14.441 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:35:14.441 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:35:14.441 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:35:14.441 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:35:14.442 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:35:14.443 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:35:14.443 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:35:14.443 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:35:14.443 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:35:14.443 [INF] RPCS: gRPC proxy started at 127.0.0.1:5567
+2023-02-17 11:35:14.443 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:35:14.443 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:35:14.445 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:35:14.459 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:35:14.459 [DBG] CHDB: Finished populating in-memory channel graph (took 267.375µs, num_node_features=1, num_nodes=0, num_channels=0)
+2023-02-17 11:35:14.459 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:35:14.459 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:35:14.459 [INF] LTND: Database(s) now open (time_to_open=16.572709ms)!
+2023-02-17 11:35:14.490 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:35:14.531 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:35:14.543 [INF] LNWL: Opened wallet
+2023-02-17 11:35:14.545 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:35:14.564 [INF] CHRE: LightningWallet opened
+2023-02-17 11:35:14.564 [DBG] LNWL: Birthday block has already been verified: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206
+2023-02-17 11:35:14.599 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:35:14.599 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:35:14.599 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:35:14.599 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:35:14.607 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:35:14.624 [INF] LNWL: Started rescan from block 601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08 (height 440) for 10 addresses
+2023-02-17 11:35:14.624 [INF] LNWL: Catching up block hashes to height 440, this might take a while
+2023-02-17 11:35:14.628 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:35:14.642 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:35:14.642 [INF] LNWL: Finished rescan for 10 addresses (synced to block 601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08, height 440)
+2023-02-17 11:35:14.646 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:35:14.646 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=7.333µs
+2023-02-17 11:35:14.646 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:35:14.656 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:35:14.665 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:35:14.665 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:14.666 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:14.667 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:35:14.667 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:35:14.667 [INF] LTND: Waiting for chain backend to finish sync, start_height=440
+2023-02-17 11:35:14.668 [INF] LTND: Chain backend is fully synced (end_height=440)!
+2023-02-17 11:35:14.668 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:35:14.668 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:35:14.668 [INF] LNWL: SigPool starting
+2023-02-17 11:35:14.668 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:35:14.679 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:35:14.679 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:35:14.679 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:35:14.679 [INF] SWPR: Sweeper starting
+2023-02-17 11:35:14.679 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:35:14.679 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.679 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:35:14.679 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.679 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:35:14.679 [INF] FNDG: Funding manager starting
+2023-02-17 11:35:14.679 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:35:14.679 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:35:14.680 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.680 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:35:14.680 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.680 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.680 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:35:14.680 [DBG] HSWC: InterceptableSwitch running: height=440, requireInterceptor=false
+2023-02-17 11:35:14.680 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.680 [INF] CRTR: Channel Router starting
+2023-02-17 11:35:14.680 [DBG] DISC: New block: height=440, hash=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:14.680 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:35:14.689 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:35:14.690 [INF] CRTR: Prune tip for Channel Graph: height=440, hash=601e07800c01fd98b9fb52ff9750c2584cb5314cf47c97bb398d714314e8ef08
+2023-02-17 11:35:14.698 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:35:14.707 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:35:14.707 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.707 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:35:14.707 [INF] HSWC: Onion processor starting
+2023-02-17 11:35:14.716 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:35:14.716 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:35:14.716 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:14.716 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:35:14.716 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:35:14.743 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:14.748 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:14.749 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:35:14.749 [INF] BTCN: Server listening on 127.0.0.1:5565
+2023-02-17 11:35:14.749 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:35:14.749 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:35:14.749 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:35:14.819 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:35:15.028 [DBG] RPCS: [listchannels] fetched 0 channels from DB
+2023-02-17 11:35:15.030 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:35:15.032 [DBG] RPCS: [ListPayments]
+2023-02-17 11:35:15.432 [DBG] RPCS: [walletbalance] Total balance=100 BTC (confirmed=100 BTC, unconfirmed=0 BTC)
+2023-02-17 11:35:19.415 [INF] CRTR: Pruning channel graph using block 349ce38aa900f0bc6d28eb93fd089cbee251dfbe84afae1277c2b74df6dad6c0 (height=441)
+2023-02-17 11:35:19.497 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:19.501 [INF] CRTR: Block 349ce38aa900f0bc6d28eb93fd089cbee251dfbe84afae1277c2b74df6dad6c0 (height=441) closed 0 channels
+2023-02-17 11:35:19.510 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 441
+2023-02-17 11:35:19.520 [INF] NTFN: New block: height=441, sha=349ce38aa900f0bc6d28eb93fd089cbee251dfbe84afae1277c2b74df6dad6c0
+2023-02-17 11:35:19.520 [INF] UTXN: Attempting to graduate height=441: num_kids=0, num_babies=0
+2023-02-17 11:35:19.520 [DBG] DISC: New block: height=441, hash=349ce38aa900f0bc6d28eb93fd089cbee251dfbe84afae1277c2b74df6dad6c0
+2023-02-17 11:35:19.520 [DBG] SWPR: New block: height=441, sha=349ce38aa900f0bc6d28eb93fd089cbee251dfbe84afae1277c2b74df6dad6c0
+2023-02-17 11:35:21.021 [INF] CRTR: Pruning channel graph using block 40eb0b6e71d2f66ac13bb2461693692b23625b281b967d8cf441be53cdecee5b (height=442)
+2023-02-17 11:35:21.056 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:21.066 [INF] CRTR: Block 40eb0b6e71d2f66ac13bb2461693692b23625b281b967d8cf441be53cdecee5b (height=442) closed 0 channels
+2023-02-17 11:35:21.101 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 442
+2023-02-17 11:35:21.117 [INF] NTFN: New block: height=442, sha=40eb0b6e71d2f66ac13bb2461693692b23625b281b967d8cf441be53cdecee5b
+2023-02-17 11:35:21.127 [DBG] DISC: New block: height=442, hash=40eb0b6e71d2f66ac13bb2461693692b23625b281b967d8cf441be53cdecee5b
+2023-02-17 11:35:21.127 [DBG] SWPR: New block: height=442, sha=40eb0b6e71d2f66ac13bb2461693692b23625b281b967d8cf441be53cdecee5b
+2023-02-17 11:35:21.127 [INF] UTXN: Attempting to graduate height=442: num_kids=0, num_babies=0
+2023-02-17 11:35:22.632 [INF] CRTR: Pruning channel graph using block 7a892149c8d21733fced34541b6c4d03e3923ef49f36dca4cd13ecb134b2090b (height=443)
+2023-02-17 11:35:22.680 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:22.680 [INF] CRTR: Block 7a892149c8d21733fced34541b6c4d03e3923ef49f36dca4cd13ecb134b2090b (height=443) closed 0 channels
+2023-02-17 11:35:22.680 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 443
+2023-02-17 11:35:22.681 [INF] NTFN: New block: height=443, sha=7a892149c8d21733fced34541b6c4d03e3923ef49f36dca4cd13ecb134b2090b
+2023-02-17 11:35:22.681 [DBG] DISC: New block: height=443, hash=7a892149c8d21733fced34541b6c4d03e3923ef49f36dca4cd13ecb134b2090b
+2023-02-17 11:35:22.681 [INF] UTXN: Attempting to graduate height=443: num_kids=0, num_babies=0
+2023-02-17 11:35:22.681 [DBG] SWPR: New block: height=443, sha=7a892149c8d21733fced34541b6c4d03e3923ef49f36dca4cd13ecb134b2090b
+2023-02-17 11:35:25.486 [INF] CRTR: Pruning channel graph using block 458515cfa81932e69740568fdd0aabab8f65df11bb851912472e868ebf5e9057 (height=444)
+2023-02-17 11:35:25.520 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:25.520 [INF] CRTR: Block 458515cfa81932e69740568fdd0aabab8f65df11bb851912472e868ebf5e9057 (height=444) closed 0 channels
+2023-02-17 11:35:25.597 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 444
+2023-02-17 11:35:25.597 [INF] NTFN: New block: height=444, sha=458515cfa81932e69740568fdd0aabab8f65df11bb851912472e868ebf5e9057
+2023-02-17 11:35:25.597 [DBG] DISC: New block: height=444, hash=458515cfa81932e69740568fdd0aabab8f65df11bb851912472e868ebf5e9057
+2023-02-17 11:35:25.597 [DBG] SWPR: New block: height=444, sha=458515cfa81932e69740568fdd0aabab8f65df11bb851912472e868ebf5e9057
+2023-02-17 11:35:25.597 [INF] UTXN: Attempting to graduate height=444: num_kids=0, num_babies=0
+2023-02-17 11:35:25.598 [INF] CRTR: Pruning channel graph using block 76113f4ff789afb0c5f67e3117bb5588baf8effad5b75c4d7b2152f7094233f3 (height=445)
+2023-02-17 11:35:25.631 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:25.666 [INF] CRTR: Block 76113f4ff789afb0c5f67e3117bb5588baf8effad5b75c4d7b2152f7094233f3 (height=445) closed 0 channels
+2023-02-17 11:35:25.721 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 445
+2023-02-17 11:35:25.737 [INF] NTFN: New block: height=445, sha=76113f4ff789afb0c5f67e3117bb5588baf8effad5b75c4d7b2152f7094233f3
+2023-02-17 11:35:25.755 [DBG] SWPR: New block: height=445, sha=76113f4ff789afb0c5f67e3117bb5588baf8effad5b75c4d7b2152f7094233f3
+2023-02-17 11:35:25.755 [INF] UTXN: Attempting to graduate height=445: num_kids=0, num_babies=0
+2023-02-17 11:35:25.755 [DBG] DISC: New block: height=445, hash=76113f4ff789afb0c5f67e3117bb5588baf8effad5b75c4d7b2152f7094233f3
+2023-02-17 11:35:25.802 [INF] CRTR: Pruning channel graph using block 22180434c3b0f639406facaef86a6460a6b84a4d5f1be3b6b2afdf1dbc49a736 (height=446)
+2023-02-17 11:35:25.850 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 446
+2023-02-17 11:35:25.854 [INF] NTFN: New block: height=446, sha=22180434c3b0f639406facaef86a6460a6b84a4d5f1be3b6b2afdf1dbc49a736
+2023-02-17 11:35:25.854 [DBG] SWPR: New block: height=446, sha=22180434c3b0f639406facaef86a6460a6b84a4d5f1be3b6b2afdf1dbc49a736
+2023-02-17 11:35:25.854 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:25.854 [INF] CRTR: Block 22180434c3b0f639406facaef86a6460a6b84a4d5f1be3b6b2afdf1dbc49a736 (height=446) closed 0 channels
+2023-02-17 11:35:25.854 [INF] UTXN: Attempting to graduate height=446: num_kids=0, num_babies=0
+2023-02-17 11:35:25.854 [DBG] DISC: New block: height=446, hash=22180434c3b0f639406facaef86a6460a6b84a4d5f1be3b6b2afdf1dbc49a736
+2023-02-17 11:35:25.909 [INF] CRTR: Pruning channel graph using block 21dd6d57ac1d20dc44dc3495ca839152c8e9d20201262412924a294bd3418af4 (height=447)
+2023-02-17 11:35:25.973 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:25.996 [INF] CRTR: Block 21dd6d57ac1d20dc44dc3495ca839152c8e9d20201262412924a294bd3418af4 (height=447) closed 0 channels
+2023-02-17 11:35:26.020 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 447
+2023-02-17 11:35:26.024 [INF] NTFN: New block: height=447, sha=21dd6d57ac1d20dc44dc3495ca839152c8e9d20201262412924a294bd3418af4
+2023-02-17 11:35:26.024 [DBG] DISC: New block: height=447, hash=21dd6d57ac1d20dc44dc3495ca839152c8e9d20201262412924a294bd3418af4
+2023-02-17 11:35:26.024 [DBG] SWPR: New block: height=447, sha=21dd6d57ac1d20dc44dc3495ca839152c8e9d20201262412924a294bd3418af4
+2023-02-17 11:35:26.024 [INF] UTXN: Attempting to graduate height=447: num_kids=0, num_babies=0
+2023-02-17 11:35:26.085 [INF] CRTR: Pruning channel graph using block 148fdb40c67f877a1b45a310a236060d9cbbeeee1faa3d98687a548123955477 (height=448)
+2023-02-17 11:35:26.171 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:26.171 [INF] CRTR: Block 148fdb40c67f877a1b45a310a236060d9cbbeeee1faa3d98687a548123955477 (height=448) closed 0 channels
+2023-02-17 11:35:26.185 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 448
+2023-02-17 11:35:26.189 [INF] NTFN: New block: height=448, sha=148fdb40c67f877a1b45a310a236060d9cbbeeee1faa3d98687a548123955477
+2023-02-17 11:35:26.205 [DBG] DISC: New block: height=448, hash=148fdb40c67f877a1b45a310a236060d9cbbeeee1faa3d98687a548123955477
+2023-02-17 11:35:26.205 [DBG] SWPR: New block: height=448, sha=148fdb40c67f877a1b45a310a236060d9cbbeeee1faa3d98687a548123955477
+2023-02-17 11:35:26.205 [INF] UTXN: Attempting to graduate height=448: num_kids=0, num_babies=0
+2023-02-17 11:35:26.228 [INF] CRTR: Pruning channel graph using block 670bc5250a036112644d1bd6a7b02e729274e9909cf750980cd15367db1ab4c8 (height=449)
+2023-02-17 11:35:26.281 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:26.296 [INF] CRTR: Block 670bc5250a036112644d1bd6a7b02e729274e9909cf750980cd15367db1ab4c8 (height=449) closed 0 channels
+2023-02-17 11:35:26.305 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 449
+2023-02-17 11:35:26.310 [INF] NTFN: New block: height=449, sha=670bc5250a036112644d1bd6a7b02e729274e9909cf750980cd15367db1ab4c8
+2023-02-17 11:35:26.323 [DBG] DISC: New block: height=449, hash=670bc5250a036112644d1bd6a7b02e729274e9909cf750980cd15367db1ab4c8
+2023-02-17 11:35:26.324 [DBG] SWPR: New block: height=449, sha=670bc5250a036112644d1bd6a7b02e729274e9909cf750980cd15367db1ab4c8
+2023-02-17 11:35:26.324 [INF] UTXN: Attempting to graduate height=449: num_kids=0, num_babies=0
+2023-02-17 11:35:30.798 [INF] CRTR: Pruning channel graph using block 36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d (height=450)
+2023-02-17 11:35:30.821 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:30.822 [INF] CRTR: Block 36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d (height=450) closed 0 channels
+2023-02-17 11:35:30.851 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 450
+2023-02-17 11:35:30.869 [INF] NTFN: New block: height=450, sha=36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d
+2023-02-17 11:35:30.894 [DBG] SWPR: New block: height=450, sha=36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d
+2023-02-17 11:35:30.894 [DBG] DISC: New block: height=450, hash=36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d
+2023-02-17 11:35:30.894 [INF] UTXN: Attempting to graduate height=450: num_kids=0, num_babies=0
+2023-02-17 11:35:32.385 [DBG] RPCS: [listpeers] yielded [] peers
+2023-02-17 11:35:32.388 [INF] RPCS: [DeleteAllPayments] failed_payments_only=false, failed_htlcs_only=false
+2023-02-17 11:35:34.717 [INF] LTND: Received shutdown request.
+2023-02-17 11:35:34.718 [INF] LTND: Shutting down...
+2023-02-17 11:35:34.718 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:35:34.719 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:35:34.723 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:35:34.724 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:35:34.728 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:35:34.728 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:35:34.728 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:35:34.728 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:35:34.728 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:35:34.728 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:35:34.729 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:35:34.729 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:35:34.729 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:35:34.729 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:35:34.729 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:35:34.729 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:35:34.729 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:35:34.729 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:35:34.729 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:35:34.729 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:35:34.729 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:35:34.729 [DBG] DISC: SyncManager stopped
+2023-02-17 11:35:34.729 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:35:34.729 [DBG] DISC: reliableSender stopped
+2023-02-17 11:35:34.729 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:35:34.729 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:35:34.729 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:35:34.729 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:35:34.729 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:35:34.730 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:35:34.730 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:35:34.730 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:35:34.730 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:35:34.730 [INF] CHFT: Stopping event store
+2023-02-17 11:35:34.730 [DBG] CHFT: recording flap count for: 0 peers
+2023-02-17 11:35:34.730 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:35:34.739 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:35:34.739 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:35:34.740 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:35:34.741 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:35:34.741 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:35:34.741 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:35:34.745 [INF] LTND: Shutdown complete
+
+2023-02-17 11:35:34.792 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/lnd.conf: no such file or directory
+2023-02-17 11:35:34.792 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:35:34.792 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:35:34.792 [INF] LTND: Pprof listening on 127.0.0.1:5568
+2023-02-17 11:35:34.793 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:35:34.793 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:35:34.793 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:35:34.793 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:35:34.793 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:35:34.793 [INF] RPCS: RPC server listening on 127.0.0.1:5566
+2023-02-17 11:35:34.794 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:35:34.794 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:35:34.794 [INF] RPCS: gRPC proxy started at 127.0.0.1:5567
+2023-02-17 11:35:34.794 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:35:34.794 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:35:34.797 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:35:34.812 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:35:34.813 [DBG] CHDB: Finished populating in-memory channel graph (took 54.917µs, num_node_features=1, num_nodes=0, num_channels=0)
+2023-02-17 11:35:34.813 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:35:34.813 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:35:34.813 [INF] LTND: Database(s) now open (time_to_open=18.425084ms)!
+2023-02-17 11:35:34.842 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:35:34.882 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:35:34.894 [INF] LNWL: Opened wallet
+2023-02-17 11:35:34.895 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:35:34.909 [INF] CHRE: LightningWallet opened
+2023-02-17 11:35:34.909 [DBG] LNWL: Birthday block has already been verified: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206
+2023-02-17 11:35:34.945 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:35:34.945 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:35:34.945 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:35:34.945 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:35:34.953 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:35:34.967 [INF] LNWL: Started rescan from block 36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d (height 450) for 10 addresses
+2023-02-17 11:35:34.972 [INF] LNWL: Catching up block hashes to height 450, this might take a while
+2023-02-17 11:35:34.986 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:35:34.990 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:35:34.991 [INF] LNWL: Finished rescan for 10 addresses (synced to block 36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d, height 450)
+2023-02-17 11:35:35.000 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:35:35.000 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=14.75µs
+2023-02-17 11:35:35.000 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:35:35.009 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:35:35.018 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:35:35.018 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:35.018 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:35:35.019 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:35:35.019 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:35.019 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:35:35.020 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:35:35.020 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:35:35.021 [INF] LTND: Waiting for chain backend to finish sync, start_height=450
+2023-02-17 11:35:35.023 [INF] LTND: Chain backend is fully synced (end_height=450)!
+2023-02-17 11:35:35.023 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:35:35.023 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:35:35.023 [INF] LNWL: SigPool starting
+2023-02-17 11:35:35.023 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:35:35.039 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:35:35.039 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:35:35.039 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:35:35.039 [INF] SWPR: Sweeper starting
+2023-02-17 11:35:35.039 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:35:35.039 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.040 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:35:35.040 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.040 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:35:35.040 [INF] FNDG: Funding manager starting
+2023-02-17 11:35:35.040 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:35:35.040 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:35:35.040 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.040 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:35:35.040 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.040 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.040 [DBG] HSWC: InterceptableSwitch running: height=450, requireInterceptor=false
+2023-02-17 11:35:35.040 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:35:35.040 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.040 [INF] CRTR: Channel Router starting
+2023-02-17 11:35:35.040 [DBG] DISC: New block: height=450, hash=36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d
+2023-02-17 11:35:35.040 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:35:35.047 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:35:35.048 [INF] CRTR: Prune tip for Channel Graph: height=450, hash=36489c0baea04f6c2c5fa9fa3c4da7caff1da03f764ff94354ea33a07730382d
+2023-02-17 11:35:35.057 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:35:35.067 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:35:35.067 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.067 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:35:35.067 [INF] HSWC: Onion processor starting
+2023-02-17 11:35:35.075 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:35:35.075 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:35:35.075 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:35.075 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:35:35.075 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:35:35.105 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:35.111 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:35.112 [INF] BTCN: Server listening on 127.0.0.1:5565
+2023-02-17 11:35:35.112 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:35:35.112 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:35:35.112 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:35:35.112 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:35:35.167 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:35:35.370 [DBG] RPCS: [listchannels] fetched 0 channels from DB
+2023-02-17 11:35:35.371 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:35:35.374 [DBG] RPCS: [ListPayments]
+2023-02-17 11:35:35.759 [DBG] RPCS: [walletbalance] Total balance=100 BTC (confirmed=100 BTC, unconfirmed=0 BTC)
+2023-02-17 11:35:39.755 [INF] CRTR: Pruning channel graph using block 6f2a001a7c27d5c7ac6d6e42bf53a14c09e7e892b929799c064e113c6fec0c06 (height=451)
+2023-02-17 11:35:39.791 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 451
+2023-02-17 11:35:39.796 [INF] NTFN: New block: height=451, sha=6f2a001a7c27d5c7ac6d6e42bf53a14c09e7e892b929799c064e113c6fec0c06
+2023-02-17 11:35:39.807 [DBG] DISC: New block: height=451, hash=6f2a001a7c27d5c7ac6d6e42bf53a14c09e7e892b929799c064e113c6fec0c06
+2023-02-17 11:35:39.795 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:39.847 [INF] CRTR: Block 6f2a001a7c27d5c7ac6d6e42bf53a14c09e7e892b929799c064e113c6fec0c06 (height=451) closed 0 channels
+2023-02-17 11:35:39.807 [DBG] SWPR: New block: height=451, sha=6f2a001a7c27d5c7ac6d6e42bf53a14c09e7e892b929799c064e113c6fec0c06
+2023-02-17 11:35:39.808 [INF] UTXN: Attempting to graduate height=451: num_kids=0, num_babies=0
+2023-02-17 11:35:41.371 [INF] CRTR: Pruning channel graph using block 65f99d2143af88e5aee13a421a85957fab3372a87a183752540d44e36048119c (height=452)
+2023-02-17 11:35:41.419 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:41.427 [INF] CRTR: Block 65f99d2143af88e5aee13a421a85957fab3372a87a183752540d44e36048119c (height=452) closed 0 channels
+2023-02-17 11:35:41.433 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 452
+2023-02-17 11:35:41.447 [INF] NTFN: New block: height=452, sha=65f99d2143af88e5aee13a421a85957fab3372a87a183752540d44e36048119c
+2023-02-17 11:35:41.448 [INF] UTXN: Attempting to graduate height=452: num_kids=0, num_babies=0
+2023-02-17 11:35:41.448 [DBG] DISC: New block: height=452, hash=65f99d2143af88e5aee13a421a85957fab3372a87a183752540d44e36048119c
+2023-02-17 11:35:41.448 [DBG] SWPR: New block: height=452, sha=65f99d2143af88e5aee13a421a85957fab3372a87a183752540d44e36048119c
+2023-02-17 11:35:43.004 [INF] CRTR: Pruning channel graph using block 7d9adcb6e1fc083ebee16738981a8264ad0c82dbe48d3066e70fd26be830e100 (height=453)
+2023-02-17 11:35:43.036 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:43.047 [INF] CRTR: Block 7d9adcb6e1fc083ebee16738981a8264ad0c82dbe48d3066e70fd26be830e100 (height=453) closed 0 channels
+2023-02-17 11:35:43.072 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 453
+2023-02-17 11:35:43.076 [INF] NTFN: New block: height=453, sha=7d9adcb6e1fc083ebee16738981a8264ad0c82dbe48d3066e70fd26be830e100
+2023-02-17 11:35:43.096 [DBG] SWPR: New block: height=453, sha=7d9adcb6e1fc083ebee16738981a8264ad0c82dbe48d3066e70fd26be830e100
+2023-02-17 11:35:43.096 [INF] UTXN: Attempting to graduate height=453: num_kids=0, num_babies=0
+2023-02-17 11:35:43.096 [DBG] DISC: New block: height=453, hash=7d9adcb6e1fc083ebee16738981a8264ad0c82dbe48d3066e70fd26be830e100
+2023-02-17 11:35:45.756 [INF] CRTR: Pruning channel graph using block 6955c82dff39ad9b8a28b1617420857b9c58567da86b361c5554ea8bacb83f60 (height=454)
+2023-02-17 11:35:45.812 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:45.826 [INF] CRTR: Block 6955c82dff39ad9b8a28b1617420857b9c58567da86b361c5554ea8bacb83f60 (height=454) closed 0 channels
+2023-02-17 11:35:45.841 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 454
+2023-02-17 11:35:45.847 [INF] NTFN: New block: height=454, sha=6955c82dff39ad9b8a28b1617420857b9c58567da86b361c5554ea8bacb83f60
+2023-02-17 11:35:45.855 [DBG] DISC: New block: height=454, hash=6955c82dff39ad9b8a28b1617420857b9c58567da86b361c5554ea8bacb83f60
+2023-02-17 11:35:45.856 [DBG] SWPR: New block: height=454, sha=6955c82dff39ad9b8a28b1617420857b9c58567da86b361c5554ea8bacb83f60
+2023-02-17 11:35:45.856 [INF] UTXN: Attempting to graduate height=454: num_kids=0, num_babies=0
+2023-02-17 11:35:45.957 [INF] CRTR: Pruning channel graph using block 3ea9f7581bcab02291a7b89f226571ecc7cae34d95cff166decb193859687498 (height=455)
+2023-02-17 11:35:46.025 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:46.025 [INF] CRTR: Block 3ea9f7581bcab02291a7b89f226571ecc7cae34d95cff166decb193859687498 (height=455) closed 0 channels
+2023-02-17 11:35:46.038 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 455
+2023-02-17 11:35:46.045 [INF] NTFN: New block: height=455, sha=3ea9f7581bcab02291a7b89f226571ecc7cae34d95cff166decb193859687498
+2023-02-17 11:35:46.050 [DBG] SWPR: New block: height=455, sha=3ea9f7581bcab02291a7b89f226571ecc7cae34d95cff166decb193859687498
+2023-02-17 11:35:46.050 [DBG] DISC: New block: height=455, hash=3ea9f7581bcab02291a7b89f226571ecc7cae34d95cff166decb193859687498
+2023-02-17 11:35:46.050 [INF] UTXN: Attempting to graduate height=455: num_kids=0, num_babies=0
+2023-02-17 11:35:46.107 [INF] CRTR: Pruning channel graph using block 6e8f6c7f9329d1c57ef745a53ae5644cd5fb53e101b268eb001c268d3880475b (height=456)
+2023-02-17 11:35:46.214 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:46.233 [INF] CRTR: Block 6e8f6c7f9329d1c57ef745a53ae5644cd5fb53e101b268eb001c268d3880475b (height=456) closed 0 channels
+2023-02-17 11:35:46.239 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 456
+2023-02-17 11:35:46.239 [INF] NTFN: New block: height=456, sha=6e8f6c7f9329d1c57ef745a53ae5644cd5fb53e101b268eb001c268d3880475b
+2023-02-17 11:35:46.239 [DBG] DISC: New block: height=456, hash=6e8f6c7f9329d1c57ef745a53ae5644cd5fb53e101b268eb001c268d3880475b
+2023-02-17 11:35:46.240 [DBG] SWPR: New block: height=456, sha=6e8f6c7f9329d1c57ef745a53ae5644cd5fb53e101b268eb001c268d3880475b
+2023-02-17 11:35:46.240 [INF] UTXN: Attempting to graduate height=456: num_kids=0, num_babies=0
+2023-02-17 11:35:46.279 [INF] CRTR: Pruning channel graph using block 14486ab9ec966fa99cb7f7aa0fe84292fdad50e774143acc40ad207b7591f396 (height=457)
+2023-02-17 11:35:46.332 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:46.332 [INF] CRTR: Block 14486ab9ec966fa99cb7f7aa0fe84292fdad50e774143acc40ad207b7591f396 (height=457) closed 0 channels
+2023-02-17 11:35:46.332 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 457
+2023-02-17 11:35:46.333 [INF] NTFN: New block: height=457, sha=14486ab9ec966fa99cb7f7aa0fe84292fdad50e774143acc40ad207b7591f396
+2023-02-17 11:35:46.349 [DBG] SWPR: New block: height=457, sha=14486ab9ec966fa99cb7f7aa0fe84292fdad50e774143acc40ad207b7591f396
+2023-02-17 11:35:46.349 [DBG] DISC: New block: height=457, hash=14486ab9ec966fa99cb7f7aa0fe84292fdad50e774143acc40ad207b7591f396
+2023-02-17 11:35:46.349 [INF] UTXN: Attempting to graduate height=457: num_kids=0, num_babies=0
+2023-02-17 11:35:46.413 [INF] CRTR: Pruning channel graph using block 702fbeced94d3113581051bafc280eefacac7f5ea43a4aca40674a7968118ed8 (height=458)
+2023-02-17 11:35:46.486 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 458
+2023-02-17 11:35:46.487 [INF] NTFN: New block: height=458, sha=702fbeced94d3113581051bafc280eefacac7f5ea43a4aca40674a7968118ed8
+2023-02-17 11:35:46.497 [DBG] SWPR: New block: height=458, sha=702fbeced94d3113581051bafc280eefacac7f5ea43a4aca40674a7968118ed8
+2023-02-17 11:35:46.497 [INF] UTXN: Attempting to graduate height=458: num_kids=0, num_babies=0
+2023-02-17 11:35:46.497 [DBG] DISC: New block: height=458, hash=702fbeced94d3113581051bafc280eefacac7f5ea43a4aca40674a7968118ed8
+2023-02-17 11:35:46.511 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:46.516 [INF] CRTR: Block 702fbeced94d3113581051bafc280eefacac7f5ea43a4aca40674a7968118ed8 (height=458) closed 0 channels
+2023-02-17 11:35:46.527 [INF] CRTR: Pruning channel graph using block 55c91a06c8d2e6a41f0310bc2b02fd6c64fa046bb23a5341211b13ea08c60dc3 (height=459)
+2023-02-17 11:35:46.565 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:46.618 [INF] CRTR: Block 55c91a06c8d2e6a41f0310bc2b02fd6c64fa046bb23a5341211b13ea08c60dc3 (height=459) closed 0 channels
+2023-02-17 11:35:46.619 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 459
+2023-02-17 11:35:46.638 [INF] NTFN: New block: height=459, sha=55c91a06c8d2e6a41f0310bc2b02fd6c64fa046bb23a5341211b13ea08c60dc3
+2023-02-17 11:35:46.638 [INF] UTXN: Attempting to graduate height=459: num_kids=0, num_babies=0
+2023-02-17 11:35:46.638 [DBG] DISC: New block: height=459, hash=55c91a06c8d2e6a41f0310bc2b02fd6c64fa046bb23a5341211b13ea08c60dc3
+2023-02-17 11:35:46.638 [DBG] SWPR: New block: height=459, sha=55c91a06c8d2e6a41f0310bc2b02fd6c64fa046bb23a5341211b13ea08c60dc3
+2023-02-17 11:35:51.164 [INF] CRTR: Pruning channel graph using block 11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424 (height=460)
+2023-02-17 11:35:51.218 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:35:51.230 [INF] CRTR: Block 11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424 (height=460) closed 0 channels
+2023-02-17 11:35:51.235 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 460
+2023-02-17 11:35:51.250 [INF] NTFN: New block: height=460, sha=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:35:51.250 [DBG] SWPR: New block: height=460, sha=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:35:51.250 [INF] UTXN: Attempting to graduate height=460: num_kids=0, num_babies=0
+2023-02-17 11:35:51.250 [DBG] DISC: New block: height=460, hash=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:35:52.786 [DBG] RPCS: [listpeers] yielded [] peers
+2023-02-17 11:35:52.788 [INF] RPCS: [DeleteAllPayments] failed_payments_only=false, failed_htlcs_only=false
+2023-02-17 11:35:56.094 [INF] LTND: Received shutdown request.
+2023-02-17 11:35:56.095 [INF] LTND: Shutting down...
+2023-02-17 11:35:56.095 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:35:56.095 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:35:56.095 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:35:56.095 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:35:56.095 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:35:56.095 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:35:56.095 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:35:56.095 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:35:56.095 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:35:56.095 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:35:56.095 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:35:56.095 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:35:56.095 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:35:56.095 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:35:56.095 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:35:56.095 [DBG] DISC: SyncManager stopped
+2023-02-17 11:35:56.095 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:35:56.095 [DBG] DISC: reliableSender stopped
+2023-02-17 11:35:56.095 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:35:56.095 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:35:56.095 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:35:56.095 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:35:56.095 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:35:56.095 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:35:56.095 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:35:56.095 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:35:56.095 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:35:56.095 [INF] CHFT: Stopping event store
+2023-02-17 11:35:56.095 [DBG] CHFT: recording flap count for: 0 peers
+2023-02-17 11:35:56.095 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:35:56.105 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:35:56.105 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:35:56.105 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:35:56.106 [INF] LTND: Shutdown complete
+
+2023-02-17 11:35:56.139 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/lnd.conf: no such file or directory
+2023-02-17 11:35:56.139 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:35:56.140 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:35:56.140 [INF] LTND: Pprof listening on 127.0.0.1:5568
+2023-02-17 11:35:56.141 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:35:56.141 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:35:56.141 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:35:56.141 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:35:56.141 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:35:56.141 [INF] RPCS: RPC server listening on 127.0.0.1:5566
+2023-02-17 11:35:56.141 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:35:56.141 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:35:56.142 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:35:56.143 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:35:56.143 [INF] RPCS: gRPC proxy started at 127.0.0.1:5567
+2023-02-17 11:35:56.143 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:35:56.143 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:35:56.146 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:35:56.165 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:35:56.165 [DBG] CHDB: Finished populating in-memory channel graph (took 77.833µs, num_node_features=1, num_nodes=0, num_channels=0)
+2023-02-17 11:35:56.165 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:35:56.165 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:35:56.165 [INF] LTND: Database(s) now open (time_to_open=21.802625ms)!
+2023-02-17 11:35:56.186 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:35:56.221 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:35:56.234 [INF] LNWL: Opened wallet
+2023-02-17 11:35:56.235 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:35:56.255 [INF] CHRE: LightningWallet opened
+2023-02-17 11:35:56.255 [DBG] LNWL: Birthday block has already been verified: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206
+2023-02-17 11:35:56.287 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:35:56.287 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:35:56.287 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:35:56.287 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:35:56.296 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:35:56.302 [INF] LNWL: Started rescan from block 11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424 (height 460) for 10 addresses
+2023-02-17 11:35:56.308 [INF] LNWL: Catching up block hashes to height 460, this might take a while
+2023-02-17 11:35:56.324 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:35:56.329 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:35:56.329 [INF] LNWL: Finished rescan for 10 addresses (synced to block 11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424, height 460)
+2023-02-17 11:35:56.337 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:35:56.337 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=9.25µs
+2023-02-17 11:35:56.337 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:35:56.346 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:35:56.356 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:35:56.356 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:56.357 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:35:56.357 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:35:56.358 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:35:56.358 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:35:56.358 [INF] LTND: Waiting for chain backend to finish sync, start_height=460
+2023-02-17 11:35:56.359 [INF] LTND: Chain backend is fully synced (end_height=460)!
+2023-02-17 11:35:56.359 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:35:56.359 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:35:56.359 [INF] LNWL: SigPool starting
+2023-02-17 11:35:56.359 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:35:56.368 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:35:56.368 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:35:56.368 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:35:56.368 [INF] SWPR: Sweeper starting
+2023-02-17 11:35:56.368 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:35:56.368 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.369 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:35:56.369 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:35:56.369 [INF] FNDG: Funding manager starting
+2023-02-17 11:35:56.369 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.369 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:35:56.369 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:35:56.369 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.369 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.369 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:35:56.369 [DBG] HSWC: InterceptableSwitch running: height=460, requireInterceptor=false
+2023-02-17 11:35:56.369 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:35:56.369 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.369 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.369 [INF] CRTR: Channel Router starting
+2023-02-17 11:35:56.369 [DBG] DISC: New block: height=460, hash=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:35:56.369 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:35:56.376 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:35:56.376 [INF] CRTR: Prune tip for Channel Graph: height=460, hash=11211f3f905fff802b71eb26091eee0b57547692e92e8495ed94080583dac424
+2023-02-17 11:35:56.385 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:35:56.395 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:35:56.395 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.395 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:35:56.395 [INF] HSWC: Onion processor starting
+2023-02-17 11:35:56.405 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:35:56.405 [INF] NTFN: New block epoch subscription
+2023-02-17 11:35:56.405 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:35:56.405 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:35:56.405 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:35:56.427 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:56.432 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:35:56.433 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:35:56.433 [INF] BTCN: Server listening on 127.0.0.1:5565
+2023-02-17 11:35:56.433 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:35:56.433 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:35:56.433 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:35:56.522 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:35:56.727 [DBG] RPCS: [listchannels] fetched 0 channels from DB
+2023-02-17 11:35:56.728 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:35:56.729 [DBG] RPCS: [ListPayments]
+2023-02-17 11:35:57.121 [DBG] RPCS: [walletbalance] Total balance=100 BTC (confirmed=100 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:01.038 [INF] CRTR: Pruning channel graph using block 2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b (height=461)
+2023-02-17 11:36:01.083 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:01.104 [INF] CRTR: Block 2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b (height=461) closed 0 channels
+2023-02-17 11:36:01.121 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 461
+2023-02-17 11:36:01.122 [INF] NTFN: New block: height=461, sha=2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b
+2023-02-17 11:36:01.122 [DBG] DISC: New block: height=461, hash=2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b
+2023-02-17 11:36:01.122 [DBG] SWPR: New block: height=461, sha=2851ca756cff6917d4f1aaaf283f644554e31f511f48d969d8aa755f701e945b
+2023-02-17 11:36:01.122 [INF] UTXN: Attempting to graduate height=461: num_kids=0, num_babies=0
+2023-02-17 11:36:02.640 [INF] CRTR: Pruning channel graph using block 6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b (height=462)
+2023-02-17 11:36:02.704 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:02.716 [INF] CRTR: Block 6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b (height=462) closed 0 channels
+2023-02-17 11:36:02.710 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 462
+2023-02-17 11:36:02.747 [INF] NTFN: New block: height=462, sha=6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b
+2023-02-17 11:36:02.747 [DBG] DISC: New block: height=462, hash=6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b
+2023-02-17 11:36:02.747 [DBG] SWPR: New block: height=462, sha=6c1e1d4c041225fe76b2a2e306951bd74fce2262da5c483ab6f85ee788ef8c0b
+2023-02-17 11:36:02.747 [INF] UTXN: Attempting to graduate height=462: num_kids=0, num_babies=0
+2023-02-17 11:36:04.256 [INF] CRTR: Pruning channel graph using block 285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138 (height=463)
+2023-02-17 11:36:04.312 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:04.336 [INF] CRTR: Block 285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138 (height=463) closed 0 channels
+2023-02-17 11:36:04.347 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 463
+2023-02-17 11:36:04.369 [INF] NTFN: New block: height=463, sha=285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138
+2023-02-17 11:36:04.373 [DBG] SWPR: New block: height=463, sha=285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138
+2023-02-17 11:36:04.373 [INF] UTXN: Attempting to graduate height=463: num_kids=0, num_babies=0
+2023-02-17 11:36:04.373 [DBG] DISC: New block: height=463, hash=285edacabd47229167c895b324e703e32f40757eca15239a08597df98f064138
+2023-02-17 11:36:07.073 [INF] CRTR: Pruning channel graph using block 6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2 (height=464)
+2023-02-17 11:36:07.086 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 464
+2023-02-17 11:36:07.091 [INF] NTFN: New block: height=464, sha=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.115 [DBG] SWPR: New block: height=464, sha=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.115 [DBG] DISC: New block: height=464, hash=6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2
+2023-02-17 11:36:07.115 [INF] UTXN: Attempting to graduate height=464: num_kids=0, num_babies=0
+2023-02-17 11:36:07.119 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.119 [INF] CRTR: Block 6a17b899f98e1a819fa5a0dd442df9969067a0e14c22e43557c6d93ff9eb3fb2 (height=464) closed 0 channels
+2023-02-17 11:36:07.262 [INF] CRTR: Pruning channel graph using block 58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac (height=465)
+2023-02-17 11:36:07.352 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 465
+2023-02-17 11:36:07.353 [INF] NTFN: New block: height=465, sha=58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac
+2023-02-17 11:36:07.360 [DBG] DISC: New block: height=465, hash=58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac
+2023-02-17 11:36:07.359 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.360 [INF] UTXN: Attempting to graduate height=465: num_kids=0, num_babies=0
+2023-02-17 11:36:07.360 [INF] CRTR: Block 58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac (height=465) closed 0 channels
+2023-02-17 11:36:07.360 [DBG] SWPR: New block: height=465, sha=58e22c70fc18d04da89f3ec14829931e4bdf8408fc468dbeef8757c758c34fac
+2023-02-17 11:36:07.409 [INF] CRTR: Pruning channel graph using block 05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a (height=466)
+2023-02-17 11:36:07.503 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.503 [INF] CRTR: Block 05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a (height=466) closed 0 channels
+2023-02-17 11:36:07.534 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 466
+2023-02-17 11:36:07.535 [INF] NTFN: New block: height=466, sha=05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a
+2023-02-17 11:36:07.535 [DBG] SWPR: New block: height=466, sha=05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a
+2023-02-17 11:36:07.535 [DBG] DISC: New block: height=466, hash=05725a44610c3910b7ff593a5c0ead1a647ebecdbbfd39fe7770a73876d07d8a
+2023-02-17 11:36:07.535 [INF] UTXN: Attempting to graduate height=466: num_kids=0, num_babies=0
+2023-02-17 11:36:07.541 [INF] CRTR: Pruning channel graph using block 3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924 (height=467)
+2023-02-17 11:36:07.576 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.576 [INF] CRTR: Block 3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924 (height=467) closed 0 channels
+2023-02-17 11:36:07.583 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 467
+2023-02-17 11:36:07.615 [INF] NTFN: New block: height=467, sha=3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924
+2023-02-17 11:36:07.621 [DBG] DISC: New block: height=467, hash=3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924
+2023-02-17 11:36:07.621 [DBG] SWPR: New block: height=467, sha=3ce10bb1e2ee7c5d6ba52f426673b878e345caeb2c8d560e2b6a467741abd924
+2023-02-17 11:36:07.621 [INF] UTXN: Attempting to graduate height=467: num_kids=0, num_babies=0
+2023-02-17 11:36:07.689 [INF] CRTR: Pruning channel graph using block 12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423 (height=468)
+2023-02-17 11:36:07.737 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.737 [INF] CRTR: Block 12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423 (height=468) closed 0 channels
+2023-02-17 11:36:07.761 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 468
+2023-02-17 11:36:07.761 [INF] NTFN: New block: height=468, sha=12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423
+2023-02-17 11:36:07.761 [DBG] DISC: New block: height=468, hash=12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423
+2023-02-17 11:36:07.761 [DBG] SWPR: New block: height=468, sha=12d58b07312730ca0649ffddfcab32258b5bca7d89a8341d9c05363428a04423
+2023-02-17 11:36:07.761 [INF] UTXN: Attempting to graduate height=468: num_kids=0, num_babies=0
+2023-02-17 11:36:07.773 [INF] CRTR: Pruning channel graph using block 0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972 (height=469)
+2023-02-17 11:36:07.885 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:07.885 [INF] CRTR: Block 0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972 (height=469) closed 0 channels
+2023-02-17 11:36:07.887 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 469
+2023-02-17 11:36:07.887 [INF] NTFN: New block: height=469, sha=0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972
+2023-02-17 11:36:07.887 [DBG] SWPR: New block: height=469, sha=0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972
+2023-02-17 11:36:07.887 [INF] UTXN: Attempting to graduate height=469: num_kids=0, num_babies=0
+2023-02-17 11:36:07.887 [DBG] DISC: New block: height=469, hash=0d6b85c7738d5227741e2f5814f390881997d981170360c688fd392bf3b15972
+2023-02-17 11:36:12.403 [INF] CRTR: Pruning channel graph using block 3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9 (height=470)
+2023-02-17 11:36:12.412 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 470
+2023-02-17 11:36:12.418 [INF] NTFN: New block: height=470, sha=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.444 [DBG] SWPR: New block: height=470, sha=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.428 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:12.444 [DBG] DISC: New block: height=470, hash=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:12.444 [INF] UTXN: Attempting to graduate height=470: num_kids=0, num_babies=0
+2023-02-17 11:36:12.454 [INF] CRTR: Block 3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9 (height=470) closed 0 channels
+2023-02-17 11:36:13.966 [DBG] RPCS: [listpeers] yielded [] peers
+2023-02-17 11:36:13.967 [INF] RPCS: [DeleteAllPayments] failed_payments_only=false, failed_htlcs_only=false
+2023-02-17 11:36:17.240 [INF] LTND: Received shutdown request.
+2023-02-17 11:36:17.240 [INF] LTND: Shutting down...
+2023-02-17 11:36:17.240 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:36:17.241 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:36:17.241 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:36:17.241 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:36:17.241 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:36:17.241 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:36:17.241 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:36:17.241 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:36:17.241 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:36:17.241 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:36:17.241 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:36:17.241 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:36:17.241 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:36:17.241 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:36:17.241 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:36:17.241 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:36:17.241 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:36:17.242 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:36:17.242 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:36:17.242 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:36:17.242 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:36:17.242 [DBG] DISC: SyncManager stopped
+2023-02-17 11:36:17.242 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:36:17.242 [DBG] DISC: reliableSender stopped
+2023-02-17 11:36:17.242 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:36:17.242 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:36:17.242 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:36:17.242 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:36:17.242 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:36:17.242 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:36:17.242 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:36:17.242 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:36:17.242 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:36:17.242 [INF] CHFT: Stopping event store
+2023-02-17 11:36:17.242 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:36:17.242 [DBG] CHFT: recording flap count for: 0 peers
+2023-02-17 11:36:17.253 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:36:17.253 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:36:17.253 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:36:17.254 [INF] LTND: Shutdown complete
+
+2023-02-17 11:36:17.300 [WRN] LTND: open /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/lnd.conf: no such file or directory
+2023-02-17 11:36:17.301 [INF] LTND: Version: 0.15.99-beta commit=cert/v1.2.1-7-gf94500281-dirty, build=development, logging=default, debuglevel=debug
+2023-02-17 11:36:17.301 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2023-02-17 11:36:17.301 [INF] LTND: Pprof listening on 127.0.0.1:5568
+2023-02-17 11:36:17.302 [DBG] PRPC: Peers RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] RRPC: Router RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] NTFR: ChainNotifier RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] NTFR: ChainKit RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] DRPC: DEV RPC server successfully register with root the gRPC server
+2023-02-17 11:36:17.303 [DBG] IRPC: Invoices RPC server successfully registered with root gRPC server
+2023-02-17 11:36:17.303 [DBG] VRPC: Versioner RPC server successfully registered with root gRPC server
+2023-02-17 11:36:17.303 [DBG] SGNR: Signer RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] ARPC: Autopilot RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] NRPC: Neutrino RPC server successfully register with root gRPC server
+2023-02-17 11:36:17.303 [DBG] WLKT: WalletKit RPC server successfully registered with root gRPC server
+2023-02-17 11:36:17.303 [INF] RPCS: RPC server listening on 127.0.0.1:5566
+2023-02-17 11:36:17.303 [DBG] PRPC: Peers REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] RRPC: Router REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] NTFR: ChainNotifier REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] NTFR: ChainKit REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] DRPC: DEV REST server successfully registered with the root REST server
+2023-02-17 11:36:17.303 [DBG] IRPC: Invoices REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] VRPC: Versioner REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] SGNR: Signer REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] ARPC: Autopilot REST server successfully registered with root REST server
+2023-02-17 11:36:17.303 [DBG] NRPC: Neutrino REST server successfully registered with root REST server
+2023-02-17 11:36:17.304 [DBG] WLKT: WalletKit REST server successfully registered with root REST server
+2023-02-17 11:36:17.305 [INF] RPCS: gRPC proxy started at 127.0.0.1:5567
+2023-02-17 11:36:17.305 [INF] LTND: Opening the main database, this might take a few minutes...
+2023-02-17 11:36:17.305 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2023-02-17 11:36:17.307 [INF] LTND: Creating local graph and channel state DB instances
+2023-02-17 11:36:17.322 [DBG] CHDB: Populating in-memory channel graph, this might take a while...
+2023-02-17 11:36:17.322 [DBG] CHDB: Finished populating in-memory channel graph (took 62.541µs, num_node_features=1, num_nodes=0, num_channels=0)
+2023-02-17 11:36:17.322 [INF] CHDB: Checking for schema update: latest_version=29, db_version=29
+2023-02-17 11:36:17.322 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2023-02-17 11:36:17.322 [INF] LTND: Database(s) now open (time_to_open=17.056792ms)!
+2023-02-17 11:36:17.341 [INF] CHRE: Primary chain is set to: bitcoin
+2023-02-17 11:36:17.375 [INF] CHRE: Using external fee estimator http://localhost:5556/fee-estimates.json: cached=false
+2023-02-17 11:36:17.386 [INF] LNWL: Opened wallet
+2023-02-17 11:36:17.387 [INF] LNWL: The wallet has been unlocked without a time limit
+2023-02-17 11:36:17.405 [INF] CHRE: LightningWallet opened
+2023-02-17 11:36:17.406 [DBG] LNWL: Birthday block has already been verified: height=0, hash=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206
+2023-02-17 11:36:17.439 [INF] HSWC: Cleaning circuits from disk for closed channels
+2023-02-17 11:36:17.439 [DBG] HSWC: Found 0 closed channels
+2023-02-17 11:36:17.439 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2023-02-17 11:36:17.439 [INF] HSWC: Restoring in-memory circuit state from disk
+2023-02-17 11:36:17.448 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2023-02-17 11:36:17.453 [INF] LNWL: Started rescan from block 3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9 (height 470) for 10 addresses
+2023-02-17 11:36:17.458 [INF] LNWL: Catching up block hashes to height 470, this might take a while
+2023-02-17 11:36:17.472 [DBG] CRTR: Instantiating mission control with config: Penalty Half Life: 1h0m0s, Apriori Hop Probablity: 0.6, Maximum History: 1000, Apriori Weight: 0.5, Minimum Failure Relax Interval: 1m0s
+2023-02-17 11:36:17.476 [INF] LNWL: Done catching up block hashes
+2023-02-17 11:36:17.477 [INF] LNWL: Finished rescan for 10 addresses (synced to block 3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9, height 470)
+2023-02-17 11:36:17.485 [DBG] CRTR: Mission control state reconstruction started
+2023-02-17 11:36:17.485 [DBG] CRTR: Mission control state reconstruction finished: n=0, time=8.75µs
+2023-02-17 11:36:17.485 [DBG] SRVR: Instantiating payment session source with config: AttemptCost=100 + 0.1%, MinRouteProbability=0.01
+2023-02-17 11:36:17.494 [DBG] SRVR: Sweeper batch window duration: 5s
+2023-02-17 11:36:17.503 [INF] LTND: Channel backup proxy channel notifier starting
+2023-02-17 11:36:17.503 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: SignRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: WalletKitRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: AutopilotRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: ChainRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: InvoicesRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: PeersRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: NeutrinoKitRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: RouterRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: WatchtowerClientRPC
+2023-02-17 11:36:17.503 [DBG] LTND: Populating dependencies for sub RPC server: DevRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: PeersRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: RouterRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: ChainRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: DevRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: InvoicesRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: VersionRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: SignRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: AutopilotRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: NeutrinoKitRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: WatchtowerRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: WatchtowerClientRPC
+2023-02-17 11:36:17.503 [DBG] RPCS: Starting sub RPC server: WalletKitRPC
+2023-02-17 11:36:17.503 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2023-02-17 11:36:17.504 [INF] LTND: Waiting for chain backend to finish sync, start_height=470
+2023-02-17 11:36:17.504 [INF] LTND: Chain backend is fully synced (end_height=470)!
+2023-02-17 11:36:17.504 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2023-02-17 11:36:17.504 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2023-02-17 11:36:17.504 [INF] LNWL: SigPool starting
+2023-02-17 11:36:17.504 [DBG] HLCK: Monitoring: chain backend
+2023-02-17 11:36:17.510 [INF] CHNF: ChannelNotifier starting
+2023-02-17 11:36:17.510 [INF] PRNF: PeerNotifier starting
+2023-02-17 11:36:17.511 [INF] HSWC: HtlcNotifier starting
+2023-02-17 11:36:17.511 [INF] SWPR: Sweeper starting
+2023-02-17 11:36:17.511 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.511 [INF] UTXN: UTXO nursery starting
+2023-02-17 11:36:17.511 [INF] BRAR: Breach arbiter starting
+2023-02-17 11:36:17.511 [DBG] BRAR: Found 0 closing channels, 0 retribution records
+2023-02-17 11:36:17.511 [INF] FNDG: Funding manager starting
+2023-02-17 11:36:17.511 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.511 [INF] BRAR: Starting contract observer, watching for breaches.
+2023-02-17 11:36:17.511 [INF] HSWC: HTLC Switch starting
+2023-02-17 11:36:17.511 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.511 [INF] CNCT: ChainArbitrator starting
+2023-02-17 11:36:17.511 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.511 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.511 [DBG] HSWC: InterceptableSwitch running: height=470, requireInterceptor=false
+2023-02-17 11:36:17.511 [INF] DISC: Authenticated Gossiper starting
+2023-02-17 11:36:17.511 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.511 [INF] CRTR: Channel Router starting
+2023-02-17 11:36:17.511 [DBG] DISC: New block: height=470, hash=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:17.511 [INF] CRTR: FilteredChainView starting
+2023-02-17 11:36:17.518 [INF] CRTR: Filtering chain using 0 channels active
+2023-02-17 11:36:17.518 [INF] CRTR: Prune tip for Channel Graph: height=470, hash=3420cd1471f2c7d760bde0387509d53ba72e39bff2c42ff51b9418549a9250f9
+2023-02-17 11:36:17.527 [DBG] CRTR: Cleaning network result store.
+2023-02-17 11:36:17.536 [INF] INVC: InvoiceRegistry starting
+2023-02-17 11:36:17.536 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.536 [DBG] INVC: Adding 0 pending invoices to the expiry watcher
+2023-02-17 11:36:17.536 [INF] HSWC: Onion processor starting
+2023-02-17 11:36:17.543 [INF] NANN: Channel Status Manager starting
+2023-02-17 11:36:17.543 [INF] NTFN: New block epoch subscription
+2023-02-17 11:36:17.543 [INF] CHFT: ChannelEventStore starting
+2023-02-17 11:36:17.543 [INF] CHFT: Adding 0 channels to event store
+2023-02-17 11:36:17.543 [INF] CHBU: chanbackup.SubSwapper starting
+2023-02-17 11:36:17.580 [INF] CHBU: Updating backup file at /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:17.584 [INF] CHBU: Swapping old multi backup file from /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/temp-dont-use.backup to /var/folders/_2/p2hym_7j7bl4x5ks8vl5r9640000gq/T/lndtest-node230227820/data/chain/bitcoin/regtest/channel.backup
+2023-02-17 11:36:17.585 [DBG] CHBU: SubSwapper's backupUpdater is active!
+2023-02-17 11:36:17.585 [DBG] CRTR: New graph topology client subscription, client 1
+2023-02-17 11:36:17.585 [INF] BTCN: Server listening on 127.0.0.1:5565
+2023-02-17 11:36:17.585 [DBG] SRVR: Establishing 0 persistent connections on start
+2023-02-17 11:36:17.585 [INF] SRVR: Auto peer bootstrapping is disabled
+2023-02-17 11:36:17.669 [DBG] CRTR: New graph topology client subscription, client 2
+2023-02-17 11:36:17.874 [DBG] RPCS: [listchannels] fetched 0 channels from DB
+2023-02-17 11:36:17.875 [DBG] RPCS: [pendingchannels]
+2023-02-17 11:36:17.877 [DBG] RPCS: [ListPayments]
+2023-02-17 11:36:18.271 [DBG] RPCS: [walletbalance] Total balance=100 BTC (confirmed=100 BTC, unconfirmed=0 BTC)
+2023-02-17 11:36:22.183 [INF] CRTR: Pruning channel graph using block 636c5df620c8a01ddb4ad6d70bd6202400291e571c58000565d43b69e7728a98 (height=471)
+2023-02-17 11:36:22.184 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 471
+2023-02-17 11:36:22.198 [INF] NTFN: New block: height=471, sha=636c5df620c8a01ddb4ad6d70bd6202400291e571c58000565d43b69e7728a98
+2023-02-17 11:36:22.205 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:22.232 [INF] CRTR: Block 636c5df620c8a01ddb4ad6d70bd6202400291e571c58000565d43b69e7728a98 (height=471) closed 0 channels
+2023-02-17 11:36:22.212 [DBG] DISC: New block: height=471, hash=636c5df620c8a01ddb4ad6d70bd6202400291e571c58000565d43b69e7728a98
+2023-02-17 11:36:22.212 [INF] UTXN: Attempting to graduate height=471: num_kids=0, num_babies=0
+2023-02-17 11:36:22.212 [DBG] SWPR: New block: height=471, sha=636c5df620c8a01ddb4ad6d70bd6202400291e571c58000565d43b69e7728a98
+2023-02-17 11:36:23.787 [INF] CRTR: Pruning channel graph using block 22127ad394c5c922e03ffe48a13f9d199df96c96483096ae9de02edc64761710 (height=472)
+2023-02-17 11:36:23.839 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:23.840 [INF] CRTR: Block 22127ad394c5c922e03ffe48a13f9d199df96c96483096ae9de02edc64761710 (height=472) closed 0 channels
+2023-02-17 11:36:23.860 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 472
+2023-02-17 11:36:23.865 [INF] NTFN: New block: height=472, sha=22127ad394c5c922e03ffe48a13f9d199df96c96483096ae9de02edc64761710
+2023-02-17 11:36:23.865 [DBG] DISC: New block: height=472, hash=22127ad394c5c922e03ffe48a13f9d199df96c96483096ae9de02edc64761710
+2023-02-17 11:36:23.865 [DBG] SWPR: New block: height=472, sha=22127ad394c5c922e03ffe48a13f9d199df96c96483096ae9de02edc64761710
+2023-02-17 11:36:23.865 [INF] UTXN: Attempting to graduate height=472: num_kids=0, num_babies=0
+2023-02-17 11:36:25.416 [INF] CRTR: Pruning channel graph using block 0c160a87b33fcd477ee283e55dc6173f7cc5b970419ccc1ee4ceedeacc2b016c (height=473)
+2023-02-17 11:36:25.443 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:25.453 [INF] CRTR: Block 0c160a87b33fcd477ee283e55dc6173f7cc5b970419ccc1ee4ceedeacc2b016c (height=473) closed 0 channels
+2023-02-17 11:36:25.454 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 473
+2023-02-17 11:36:25.475 [INF] NTFN: New block: height=473, sha=0c160a87b33fcd477ee283e55dc6173f7cc5b970419ccc1ee4ceedeacc2b016c
+2023-02-17 11:36:25.485 [INF] UTXN: Attempting to graduate height=473: num_kids=0, num_babies=0
+2023-02-17 11:36:25.485 [DBG] SWPR: New block: height=473, sha=0c160a87b33fcd477ee283e55dc6173f7cc5b970419ccc1ee4ceedeacc2b016c
+2023-02-17 11:36:25.485 [DBG] DISC: New block: height=473, hash=0c160a87b33fcd477ee283e55dc6173f7cc5b970419ccc1ee4ceedeacc2b016c
+2023-02-17 11:36:28.173 [INF] CRTR: Pruning channel graph using block 2e277dd8b46d6e127232da68fc97fbe3d0f3fb0f91b1fbc1d4dcbf19a587cd08 (height=474)
+2023-02-17 11:36:28.203 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 474
+2023-02-17 11:36:28.213 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:28.224 [INF] NTFN: New block: height=474, sha=2e277dd8b46d6e127232da68fc97fbe3d0f3fb0f91b1fbc1d4dcbf19a587cd08
+2023-02-17 11:36:28.238 [INF] CRTR: Block 2e277dd8b46d6e127232da68fc97fbe3d0f3fb0f91b1fbc1d4dcbf19a587cd08 (height=474) closed 0 channels
+2023-02-17 11:36:28.254 [DBG] SWPR: New block: height=474, sha=2e277dd8b46d6e127232da68fc97fbe3d0f3fb0f91b1fbc1d4dcbf19a587cd08
+2023-02-17 11:36:28.254 [DBG] DISC: New block: height=474, hash=2e277dd8b46d6e127232da68fc97fbe3d0f3fb0f91b1fbc1d4dcbf19a587cd08
+2023-02-17 11:36:28.254 [INF] UTXN: Attempting to graduate height=474: num_kids=0, num_babies=0
+2023-02-17 11:36:28.342 [INF] CRTR: Pruning channel graph using block 45cc0a951ea3065261402d6fae5c5d473a9db4d6c28b75a771ab7c855b5ab130 (height=475)
+2023-02-17 11:36:28.403 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:28.414 [INF] CRTR: Block 45cc0a951ea3065261402d6fae5c5d473a9db4d6c28b75a771ab7c855b5ab130 (height=475) closed 0 channels
+2023-02-17 11:36:28.415 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 475
+2023-02-17 11:36:28.420 [INF] NTFN: New block: height=475, sha=45cc0a951ea3065261402d6fae5c5d473a9db4d6c28b75a771ab7c855b5ab130
+2023-02-17 11:36:28.436 [INF] UTXN: Attempting to graduate height=475: num_kids=0, num_babies=0
+2023-02-17 11:36:28.436 [DBG] DISC: New block: height=475, hash=45cc0a951ea3065261402d6fae5c5d473a9db4d6c28b75a771ab7c855b5ab130
+2023-02-17 11:36:28.436 [DBG] SWPR: New block: height=475, sha=45cc0a951ea3065261402d6fae5c5d473a9db4d6c28b75a771ab7c855b5ab130
+2023-02-17 11:36:28.469 [INF] CRTR: Pruning channel graph using block 5dd81c02a8f34c7128e2573c8c0388ccbe5b6abc58819fda51966b9b86dfdd68 (height=476)
+2023-02-17 11:36:28.520 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 476
+2023-02-17 11:36:28.530 [INF] NTFN: New block: height=476, sha=5dd81c02a8f34c7128e2573c8c0388ccbe5b6abc58819fda51966b9b86dfdd68
+2023-02-17 11:36:28.543 [INF] UTXN: Attempting to graduate height=476: num_kids=0, num_babies=0
+2023-02-17 11:36:28.542 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:28.543 [DBG] DISC: New block: height=476, hash=5dd81c02a8f34c7128e2573c8c0388ccbe5b6abc58819fda51966b9b86dfdd68
+2023-02-17 11:36:28.543 [DBG] SWPR: New block: height=476, sha=5dd81c02a8f34c7128e2573c8c0388ccbe5b6abc58819fda51966b9b86dfdd68
+2023-02-17 11:36:28.550 [INF] CRTR: Block 5dd81c02a8f34c7128e2573c8c0388ccbe5b6abc58819fda51966b9b86dfdd68 (height=476) closed 0 channels
+2023-02-17 11:36:28.574 [INF] CRTR: Pruning channel graph using block 2a43b3bfa218574f0dbd467822350fb0e6bd07df099e960fcc5d3a3534c84cee (height=477)
+2023-02-17 11:36:28.630 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:28.636 [INF] CRTR: Block 2a43b3bfa218574f0dbd467822350fb0e6bd07df099e960fcc5d3a3534c84cee (height=477) closed 0 channels
+2023-02-17 11:36:28.637 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 477
+2023-02-17 11:36:28.637 [INF] NTFN: New block: height=477, sha=2a43b3bfa218574f0dbd467822350fb0e6bd07df099e960fcc5d3a3534c84cee
+2023-02-17 11:36:28.637 [INF] UTXN: Attempting to graduate height=477: num_kids=0, num_babies=0
+2023-02-17 11:36:28.637 [DBG] DISC: New block: height=477, hash=2a43b3bfa218574f0dbd467822350fb0e6bd07df099e960fcc5d3a3534c84cee
+2023-02-17 11:36:28.637 [DBG] SWPR: New block: height=477, sha=2a43b3bfa218574f0dbd467822350fb0e6bd07df099e960fcc5d3a3534c84cee
+2023-02-17 11:36:28.711 [INF] CRTR: Pruning channel graph using block 150a43d524edde27229132fa5eeadf524af54674bf1c48182bc766b2add7788b (height=478)
+2023-02-17 11:36:28.764 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:28.769 [INF] CRTR: Block 150a43d524edde27229132fa5eeadf524af54674bf1c48182bc766b2add7788b (height=478) closed 0 channels
+2023-02-17 11:36:28.769 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 478
+2023-02-17 11:36:28.790 [INF] NTFN: New block: height=478, sha=150a43d524edde27229132fa5eeadf524af54674bf1c48182bc766b2add7788b
+2023-02-17 11:36:28.795 [DBG] SWPR: New block: height=478, sha=150a43d524edde27229132fa5eeadf524af54674bf1c48182bc766b2add7788b
+2023-02-17 11:36:28.795 [INF] UTXN: Attempting to graduate height=478: num_kids=0, num_babies=0
+2023-02-17 11:36:28.795 [DBG] DISC: New block: height=478, hash=150a43d524edde27229132fa5eeadf524af54674bf1c48182bc766b2add7788b
+2023-02-17 11:36:28.834 [INF] CRTR: Pruning channel graph using block 5bbf596a42528c19f66ee902f35ac9b98d2ace3d24a4d41bbe5e272f56ca77d3 (height=479)
+2023-02-17 11:36:28.891 [DBG] NTFN: Filtering 1 txns for 0 spend requests at height 479
+2023-02-17 11:36:28.895 [INF] NTFN: New block: height=479, sha=5bbf596a42528c19f66ee902f35ac9b98d2ace3d24a4d41bbe5e272f56ca77d3
+2023-02-17 11:36:28.905 [DBG] DISC: New block: height=479, hash=5bbf596a42528c19f66ee902f35ac9b98d2ace3d24a4d41bbe5e272f56ca77d3
+2023-02-17 11:36:28.894 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:28.926 [INF] CRTR: Block 5bbf596a42528c19f66ee902f35ac9b98d2ace3d24a4d41bbe5e272f56ca77d3 (height=479) closed 0 channels
+2023-02-17 11:36:28.905 [DBG] SWPR: New block: height=479, sha=5bbf596a42528c19f66ee902f35ac9b98d2ace3d24a4d41bbe5e272f56ca77d3
+2023-02-17 11:36:28.905 [INF] UTXN: Attempting to graduate height=479: num_kids=0, num_babies=0
+2023-02-17 11:36:33.397 [INF] CRTR: Pruning channel graph using block 77d791cad1b612b472fe658979fe0f7e5e62f727ac5365c8ef8ca39888365d46 (height=480)
+2023-02-17 11:36:33.398 [DBG] NTFN: Filtering 2 txns for 0 spend requests at height 480
+2023-02-17 11:36:33.404 [INF] NTFN: New block: height=480, sha=77d791cad1b612b472fe658979fe0f7e5e62f727ac5365c8ef8ca39888365d46
+2023-02-17 11:36:33.425 [DBG] CHDB: Pruned graph, cache now has num_node_features=1, num_nodes=0, num_channels=0
+2023-02-17 11:36:33.436 [INF] CRTR: Block 77d791cad1b612b472fe658979fe0f7e5e62f727ac5365c8ef8ca39888365d46 (height=480) closed 0 channels
+2023-02-17 11:36:33.426 [DBG] DISC: New block: height=480, hash=77d791cad1b612b472fe658979fe0f7e5e62f727ac5365c8ef8ca39888365d46
+2023-02-17 11:36:33.426 [DBG] SWPR: New block: height=480, sha=77d791cad1b612b472fe658979fe0f7e5e62f727ac5365c8ef8ca39888365d46
+2023-02-17 11:36:33.426 [INF] UTXN: Attempting to graduate height=480: num_kids=0, num_babies=0
+2023-02-17 11:36:34.946 [DBG] RPCS: [listpeers] yielded [] peers
+2023-02-17 11:36:34.947 [INF] RPCS: [DeleteAllPayments] failed_payments_only=false, failed_htlcs_only=false
+2023-02-17 11:36:36.685 [INF] LTND: Received shutdown request.
+2023-02-17 11:36:36.686 [INF] LTND: Shutting down...
+2023-02-17 11:36:36.686 [INF] LTND: Gracefully shutting down.
+2023-02-17 11:36:36.688 [INF] NANN: Channel Status Manager shutting down
+2023-02-17 11:36:36.688 [INF] HSWC: HTLC Switch shutting down
+2023-02-17 11:36:36.688 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2023-02-17 11:36:36.688 [INF] HSWC: Onion processor shutting down
+2023-02-17 11:36:36.688 [INF] HSWC: Decaying hash log received shutdown request
+2023-02-17 11:36:36.688 [INF] NTFN: Cancelling epoch notification, epoch_id=8
+2023-02-17 11:36:36.688 [INF] INVC: InvoiceRegistry shutting down
+2023-02-17 11:36:36.688 [INF] NTFN: Cancelling epoch notification, epoch_id=7
+2023-02-17 11:36:36.688 [INF] CRTR: Channel Router shutting down
+2023-02-17 11:36:36.688 [INF] CRTR: FilteredChainView stopping
+2023-02-17 11:36:36.689 [INF] CNCT: ChainArbitrator shutting down
+2023-02-17 11:36:36.689 [INF] NTFN: Cancelling epoch notification, epoch_id=5
+2023-02-17 11:36:36.689 [INF] FNDG: Funding manager shutting down
+2023-02-17 11:36:36.689 [INF] BRAR: Breach arbiter shutting down
+2023-02-17 11:36:36.689 [INF] UTXN: UTXO nursery shutting down
+2023-02-17 11:36:36.689 [INF] NTFN: Cancelling epoch notification, epoch_id=2
+2023-02-17 11:36:36.689 [INF] DISC: Authenticated gossiper shutting down
+2023-02-17 11:36:36.689 [INF] DISC: Authenticated Gossiper is stopping
+2023-02-17 11:36:36.689 [INF] NTFN: Cancelling epoch notification, epoch_id=6
+2023-02-17 11:36:36.689 [DBG] DISC: SyncManager is stopping
+2023-02-17 11:36:36.689 [DBG] DISC: SyncManager stopped
+2023-02-17 11:36:36.689 [DBG] DISC: reliableSender is stopping
+2023-02-17 11:36:36.689 [DBG] DISC: reliableSender stopped
+2023-02-17 11:36:36.689 [INF] DISC: Authenticated Gossiper stopped
+2023-02-17 11:36:36.689 [INF] SWPR: Sweeper shutting down
+2023-02-17 11:36:36.689 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2023-02-17 11:36:36.689 [DBG] SWPR: Sweeper shut down
+2023-02-17 11:36:36.689 [INF] CHNF: ChannelNotifier shutting down
+2023-02-17 11:36:36.689 [INF] PRNF: PeerNotifier shutting down
+2023-02-17 11:36:36.689 [INF] HSWC: HtlcNotifier shutting down
+2023-02-17 11:36:36.689 [INF] CHBU: Stopping chanbackup.SubSwapper
+2023-02-17 11:36:36.689 [INF] NTFN: btcd notifier shutting down
+2023-02-17 11:36:36.690 [INF] CHFT: Stopping event store
+2023-02-17 11:36:36.690 [ERR] HSWC: InterceptableSwitch stopped: block epoch stream stopped
+2023-02-17 11:36:36.690 [DBG] CHFT: recording flap count for: 0 peers
+2023-02-17 11:36:36.700 [INF] HLCK: Health monitor shutting down
+2023-02-17 11:36:36.700 [DBG] HLCK: Health check: monitor quit
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping PeersRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping RouterRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping ChainRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping DevRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping InvoicesRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping VersionRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping SignRPC Sub-RPC Server
+2023-02-17 11:36:36.700 [INF] RPCS: Stopping AutopilotRPC Sub-RPC Server
+2023-02-17 11:36:36.701 [INF] RPCS: Stopping NeutrinoKitRPC Sub-RPC Server
+2023-02-17 11:36:36.701 [INF] RPCS: Stopping WatchtowerRPC Sub-RPC Server
+2023-02-17 11:36:36.701 [INF] RPCS: Stopping WatchtowerClientRPC Sub-RPC Server
+2023-02-17 11:36:36.701 [INF] RPCS: Stopping WalletKitRPC Sub-RPC Server
+2023-02-17 11:36:36.702 [INF] LTND: Shutdown complete
+

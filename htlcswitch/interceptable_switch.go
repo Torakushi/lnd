@@ -4,6 +4,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 	"sync"
+	"time"
 
 	"github.com/go-errors/errors"
 	"github.com/lightningnetwork/lnd/chainntnfs"
@@ -374,6 +375,7 @@ func (s *InterceptableSwitch) resolve(res *FwdResolution) error {
 		return intercepted.Resume()
 
 	case FwdActionSettle:
+		time.Sleep(40 * time.Second)
 		return intercepted.Settle(res.Preimage)
 
 	case FwdActionFail:
